@@ -176,7 +176,7 @@ export default function Home() {
     <>
 
 
-    <section className="relative h-screen flex flex-col items-center justify-center bg-[#161E42] text-white px-6 text-center overflow-hidden transition-all duration-1000">
+<section className="relative h-screen flex flex-col items-center justify-center bg-[#161E42] text-white px-6 text-center overflow-hidden transition-all duration-1000">
   <div className="mb-16 transition-all duration-500 transform scale-110">
     {headings[currentIndex].diagram}
   </div>
@@ -189,7 +189,7 @@ export default function Home() {
     Transform your ideas into high-performing solutions and grow your business with smart strategies.
   </p>
 
-  <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
+  <div className="mt-14 md:mt-14 flex flex-col sm:flex-row items-center gap-4">
     <input
       type="email"
       placeholder="Enter your email"
@@ -200,6 +200,7 @@ export default function Home() {
     </button>
   </div>
 </section>
+
 
 
 
@@ -380,7 +381,6 @@ export default function Home() {
     ))}
   </div>
 </section>
-
 
 
 <section className="bg-[#161E42] text-white py-12">

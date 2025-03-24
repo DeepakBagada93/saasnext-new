@@ -11,6 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Using saasnexticon.jpg as the site icon */}
+        <link rel="icon" href="/saasnexticon.jpg" type="image/jpeg" />
+      </head>
       <body className="bg-white text-black">
         <Navbar />
         <main className="min-h-screen">{children}</main>
