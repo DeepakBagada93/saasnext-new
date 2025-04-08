@@ -1,5 +1,7 @@
 "use client";
 
+
+
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -62,10 +64,11 @@ export default function Home() {
       name: "Next.js",
       icon: "/icons/nextjs.svg",
       content: [
-        "SEO-friendly for better rankings",
-        "Fast performance with static generation",
-        "Scalable and server-side rendering support",
-        "Easy integration with APIs",
+        "SEO-friendly for better search rankings",
+        "Optimized performance with static & server-side rendering",
+        "Highly scalable and efficient for complex applications",
+        "Seamless API integration with built-in API routes",
+        "Supports modern features like ISR (Incremental Static Regeneration)",
       ],
     },
     {
@@ -73,10 +76,11 @@ export default function Home() {
       name: "Vue.js",
       icon: "/icons/vuejs.svg",
       content: [
-        "Lightweight and flexible framework",
-        "Reactive data binding for smooth UI updates",
-        "Easy to learn and implement",
-        "Great ecosystem with Vuex & Nuxt.js",
+        "Lightweight and highly flexible framework",
+        "Reactive data binding for smooth user experience",
+        "Component-based architecture for modular development",
+        "Easy integration with Vuex for state management",
+        "Perfect for building interactive UI and SPAs (Single Page Applications)",
       ],
     },
     {
@@ -84,10 +88,11 @@ export default function Home() {
       name: "Angular.js",
       icon: "/icons/angular.svg",
       content: [
-        "Enterprise-level application development",
-        "Built-in dependency injection",
-        "Highly scalable with TypeScript",
-        "Google-backed framework for stability",
+        "Enterprise-level application development with TypeScript",
+        "Two-way data binding for real-time updates",
+        "Built-in dependency injection for modularity",
+        "Powerful CLI for faster development",
+        "Backed by Google, ensuring long-term support",
       ],
     },
     {
@@ -96,9 +101,10 @@ export default function Home() {
       icon: "/icons/laravel.svg",
       content: [
         "Elegant syntax for rapid backend development",
-        "Built-in authentication & security features",
-        "Efficient database management with Eloquent ORM",
-        "Scalable for enterprise applications",
+        "Robust MVC framework with built-in security",
+        "Powerful Eloquent ORM for database management",
+        "Supports RESTful APIs and microservices",
+        "Perfect for scalable and secure web applications",
       ],
     },
     {
@@ -106,10 +112,11 @@ export default function Home() {
       name: "Django",
       icon: "/icons/django.svg",
       content: [
-        "Fast development with built-in admin panel",
-        "Highly secure framework",
-        "Great for machine learning and AI integration",
-        "Scalable for large applications",
+        "Fast and secure web development with Python",
+        "Built-in admin panel for easy content management",
+        "Highly scalable for large applications",
+        "Perfect for AI, ML, and data-driven applications",
+        "Follows the DRY (Don't Repeat Yourself) principle",
       ],
     },
     {
@@ -117,10 +124,11 @@ export default function Home() {
       name: "WordPress",
       icon: "/icons/wordpress.svg",
       content: [
-        "Easy to use with drag-and-drop builders",
-        "SEO-friendly and mobile-optimized",
-        "Thousands of plugins for customization",
-        "Perfect for blogs and business websites",
+        "User-friendly CMS with drag-and-drop builders",
+        "SEO-optimized and mobile-responsive themes",
+        "Thousands of plugins for enhanced functionality",
+        "Ideal for blogs, business sites, and e-commerce",
+        "Supports WooCommerce for online stores",
       ],
     },
     {
@@ -128,10 +136,11 @@ export default function Home() {
       name: "Google Ads",
       icon: "/icons/google-ads.svg",
       content: [
-        "Target customers based on search intent",
-        "Instant traffic boost with PPC ads",
-        "Scalable campaigns for any budget",
-        "Detailed analytics for tracking ROI",
+        "Reach high-intent customers via search and display ads",
+        "Highly targeted campaigns based on keywords and audience",
+        "Scalable budget-friendly advertising options",
+        "In-depth analytics and conversion tracking",
+        "Perfect for driving website traffic and generating leads",
       ],
     },
     {
@@ -139,13 +148,15 @@ export default function Home() {
       name: "Facebook Ads",
       icon: "/icons/facebook-ads.svg",
       content: [
-        "Advanced audience targeting",
-        "Engaging ad formats (video, carousel, etc.)",
-        "Cost-effective marketing solutions",
-        "Great for brand awareness & conversions",
+        "Hyper-targeted audience segmentation",
+        "Diverse ad formats (carousel, video, stories, etc.)",
+        "Cost-effective marketing with high engagement",
+        "AI-driven optimization for better ad performance",
+        "Perfect for brand awareness, lead generation, and e-commerce",
       ],
     },
   ];
+  
 
   const [activeTab, setActiveTab] = useState(stacks[0].id); // Default active tab
 
@@ -171,12 +182,12 @@ export default function Home() {
   ];
 
 
- 
+
   return (
     <>
 
 
-<section className="relative h-screen flex flex-col items-center justify-center bg-[#161E42] text-white px-6 text-center overflow-hidden transition-all duration-1000">
+<section className="relative h-screen flex flex-col items-center justify-center bg-[#161E42] text-white px-6 text-center overflow-hidden transition-all duration-1000 mt-40 md:mt-0">
   <div className="mb-16 transition-all duration-500 transform scale-110">
     {headings[currentIndex].diagram}
   </div>
@@ -189,241 +200,247 @@ export default function Home() {
     Transform your ideas into high-performing solutions and grow your business with smart strategies.
   </p>
 
-  <div className="mt-14 md:mt-14 flex flex-col sm:flex-row items-center gap-4">
-    <input
-      type="email"
-      placeholder="Enter your email"
-      className="px-5 py-3 w-80 border border-gray-400 rounded-lg bg-transparent text-white placeholder-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none"
-    />
-    <button className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition-colors duration-300">
-      Get Started
-    </button>
-  </div>
+  
 </section>
 
 
 
-
-<section className="container mx-auto px-6 py-16 bg-[#161E42] text-white">
+<section className="container mx-auto px-6 py-20 bg-[#161E42] text-white">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    
-    {/* Left Side - Heading & Description */}
-    <div className="md:pr-10">
-      <h2 className="text-4xl font-extrabold mb-4 leading-tight">
+
+    {/* Left Side - Title and Description */}
+    <div className="md:pr-12">
+      <h2 className="text-4xl font-extrabold mb-4 leading-snug tracking-tight">
         Why Choose <span className="text-orange-500">Saasnext?</span>
       </h2>
-      <p className="text-lg text-gray-300">
-        We deliver cutting-edge digital solutions tailored to your business needs. 
-        Our team combines innovation, expertise, and dedication to drive your success.
+      <p className="text-lg text-gray-300 leading-relaxed">
+        We provide cutting-edge digital solutions customized to your business needs. 
+        Our expert team blends innovation and dedication to ensure measurable success.
       </p>
     </div>
 
-    {/* Right Side - Square Cards with Border Change on Hover */}
+    {/* Right Side - Cards */}
     <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
       {points.map((point, index) => (
         <div
           key={index}
-          className="bg-[#1f2a55] p-6 rounded-lg flex flex-col items-center justify-center text-center border-2 border-[#1f2a55]
-                     transition-all duration-300 hover:border-orange-500 shadow-lg h-36"
+          className="group bg-[#1f2a55] p-6 rounded-2xl flex flex-col items-center justify-center text-center 
+                     border border-transparent hover:border-orange-500 hover:shadow-lg transition-all duration-300"
         >
-          <span className="text-orange-500 text-3xl font-bold">
+          <div className="text-3xl font-bold text-orange-500 mb-2 group-hover:scale-110 transition-transform duration-300">
             {index + 1}
-          </span>
-          <p className="text-gray-300 font-medium text-sm mt-2">
-            {point}
+          </div>
+          <p className="text-sm font-medium text-gray-300">{point}</p>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
+
+
+      <div className="flex flex-col items-center justify-center mt-16 px-4 md:px-6 lg:px-12 w-full">
+  {/* Flowchart Container */}
+  <div className="flex flex-wrap justify-center gap-6 md:flex-nowrap md:overflow-x-auto p-4">
+    {sections.map((section, index) => (
+      <div key={index} className="flex flex-col items-center relative group">
+        
+        {/* Box */}
+        <div className="flex flex-col items-center justify-center bg-[#1f2a55] text-white px-8 py-5 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-110 hover:shadow-xl">
+          <span className="text-4xl md:text-5xl font-extrabold">{section.letter}</span>
+          <span className="text-sm md:text-lg text-gray-200 mt-1">{section.title}</span>
+        </div>
+
+        {/* Connecting Line (for large screens) */}
+        {index < sections.length - 1 && (
+          <div className="hidden md:flex absolute top-1/2 right-[-30px] w-10 h-1 bg-gray-400"></div>
+        )}
+
+        {/* Connecting Arrow (for small screens) */}
+        {index < sections.length - 1 && (
+          <div className="md:hidden text-2xl text-gray-400 mt-4 animate-bounce">↓</div>
+        )}
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
+      <section className="container mx-auto px-6 py-12 bg-[#161E42] text-white">
+        {/* Heading Section */}
+        <div className="text-left">
+          <h2 className="text-4xl font-extrabold">
+            Saasnext Helps You <span className="text-orange-500">Grow Your Business</span>
+          </h2>
+          <p className="text-gray-300 text-lg mt-3">
+            We provide top-tier digital solutions that drive growth, increase visibility, and enhance customer engagement.
           </p>
         </div>
-      ))}
-    </div>
 
-  </div>
-</section>
-
-<div className="flex flex-col items-center justify-center mt-16 px-4 md:px-6 lg:px-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 text-center">
-        SaaSNext Flowchart
-      </h2>
-
-      {/* Responsive Flowchart */}
-      <div className="flex flex-wrap justify-center gap-6 md:flex-nowrap md:overflow-x-auto p-4">
-        {sections.map((section, index) => (
-          <div key={index} className="flex flex-col items-center relative">
-            {/* Box */}
-            <div className="group flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-600 text-white px-6 py-4 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
-              <span className="text-3xl md:text-4xl font-extrabold">{section.letter}</span>
-              <span className="text-sm md:text-base text-gray-200">{section.title}</span>
+        {/* Enhanced Progress Bar Container */}
+        <div className="bg-[#1F2A55] mt-10 p-8 rounded-lg shadow-lg border border-gray-700">
+          {growthFactors.map((factor, index) => (
+            <div key={index} className="mb-6">
+              <div className="flex justify-between font-semibold text-lg">
+                <span className="text-gray-200">{factor.name}</span>
+                <span className="text-orange-400">{progressValues[index]}%</span>
+              </div>
+              <div className="w-full bg-gray-700 h-3 rounded-full mt-2 overflow-hidden">
+                <div
+                  className="bg-orange-400 h-3 rounded-full transition-all duration-1000 ease-in-out"
+                  style={{ width: `${progressValues[index]}%` }}
+                ></div>
+              </div>
             </div>
-
-            {/* Connecting Line (for large screens) */}
-            {index < sections.length - 1 && (
-              <div className="hidden md:block absolute top-1/2 right-full w-10 h-1 bg-gray-300 md:flex"></div>
-            )}
-
-            {/* Connecting Arrow (for small screens) */}
-            {index < sections.length - 1 && (
-              <div className="md:hidden text-2xl text-gray-300 mt-2">↓</div>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
-
-
-<section className="container mx-auto px-6 py-12 bg-[#161E42] text-white">
-  {/* Heading Section */}
-  <div className="text-left">
-    <h2 className="text-4xl font-extrabold">
-      Saasnext Helps You <span className="text-orange-500">Grow Your Business</span>
-    </h2>
-    <p className="text-gray-300 text-lg mt-3">
-      We provide top-tier digital solutions that drive growth, increase visibility, and enhance customer engagement.
-    </p>
-  </div>
-
-  {/* Enhanced Progress Bar Container */}
-  <div className="bg-[#1F2A55] mt-10 p-8 rounded-lg shadow-lg border border-gray-700">
-    {growthFactors.map((factor, index) => (
-      <div key={index} className="mb-6">
-        <div className="flex justify-between font-semibold text-lg">
-          <span className="text-gray-200">{factor.name}</span>
-          <span className="text-orange-400">{progressValues[index]}%</span>
-        </div>
-        <div className="w-full bg-gray-700 h-3 rounded-full mt-2 overflow-hidden">
-          <div
-            className="bg-orange-400 h-3 rounded-full transition-all duration-1000 ease-in-out"
-            style={{ width: `${progressValues[index]}%` }}
-          ></div>
-        </div>
-      </div>
-    ))}
-  </div>
-</section>
-
-
-
-
-<section className="container mx-auto px-6 py-12 text-center bg-[#161E42] text-white">
-  {/* Centered Heading */}
-  <div className="mb-8">
-    <h2 className="text-4xl font-extrabold text-white">Choose Your <span className="text-orange-500">Tech Stack</span></h2>
-    <p className="text-gray-300 text-lg mt-3 max-w-2xl mx-auto">
-      Select the best technologies for your web application, ensuring high performance, scalability, and seamless user experience.
-    </p>
-  </div>
-
-  {/* Tab Container */}
-  <div className="bg-[#1F2A55] p-8 rounded-xl shadow-xl border border-gray-700">
-    {/* Tabs Aligned Center */}
-    <div className="flex flex-wrap justify-center gap-4 border-b border-gray-600 pb-4">
-      {stacks.map((stack) => (
-        <button
-          key={stack.id}
-          onClick={() => setActiveTab(stack.id)}
-          className={`p-4 rounded-lg transition-all flex flex-col items-center w-28 ${
-            activeTab === stack.id
-              ? "bg-orange-500 text-white shadow-lg border-orange-500"
-              : "bg-gray-700 text-gray-300 border border-gray-600 hover:border-orange-400 transition-all"
-          }`}
-        >
-          <img src={stack.icon} alt={stack.name} className="w-12 h-12" />
-          <span className="text-sm mt-2 font-medium">{stack.name}</span>
-        </button>
-      ))}
-    </div>
-
-    {/* Tab Content */}
-    <div className="mt-6 p-6 bg-gray-800 rounded-lg shadow-lg border border-gray-700">
-      <h3 className="text-2xl font-semibold text-white">
-        {stacks.find((stack) => stack.id === activeTab)?.name}
-      </h3>
-      <p className="text-gray-300 text-lg mt-2">
-        Why choose <span className="text-orange-400">{stacks.find((stack) => stack.id === activeTab)?.name}</span>?
-      </p>
-      <ul className="mt-4 text-gray-300 text-lg text-left mx-auto max-w-lg space-y-3">
-        {stacks
-          .find((stack) => stack.id === activeTab)
-          ?.content.map((benefit, index) => (
-            <li key={index} className="flex items-center gap-3">
-              <span className="text-orange-400 text-lg">✔</span> {benefit}
-            </li>
           ))}
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-<section className="container mx-auto px-6 py-12 bg-[#161E42] text-white">
-  {/* Heading */}
-  <div className="text-center">
-    <h2 className="text-4xl font-extrabold text-white">Our <span className="text-orange-500">Work Process</span></h2>
-    <p className="text-gray-300 text-lg mt-3">Step-by-step workflow to ensure quality, efficiency, and seamless execution.</p>
-  </div>
-
-  {/* Horizontal Timeline Container */}
-  <div className="mt-12 flex overflow-x-auto hide-scrollbar space-x-6 px-4">
-    {steps.map((step) => (
-      <div 
-        key={step.id} 
-        className="flex flex-col items-center text-center bg-[#1F2A55] shadow-lg p-6 rounded-xl border border-gray-700 transition-all min-w-[220px] hover:border-orange-500"
-      >
-        {/* Step Icon */}
-        <div className="w-16 h-16 flex items-center justify-center bg-gray-700 border-4 border-orange-500 rounded-full shadow-lg text-3xl text-orange-400">
-          {step.icon}
         </div>
+      </section>
 
-        {/* Step Content */}
-        <div className="mt-4">
-          <h4 className="text-xl font-semibold text-white">{step.title}</h4>
-          <p className="text-gray-300 text-sm mt-2">{step.description}</p>
+
+      {/* Divider */}
+      <div className="bg-[#161E42] py-8">
+        <div className="container mx-auto px-6">
+          <hr className="border-t-2 border-gray-700" />
         </div>
       </div>
-    ))}
-  </div>
-</section>
 
 
-<section className="bg-[#161E42] text-white py-12">
-  <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8 text-center">
-    {/* Heading with HR Line */}
-    <div className="max-w-md mx-auto">
-      <hr className="w-12 h-[4px] bg-orange-500 mx-auto mb-4 rounded-full" />
-      <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-        SaaSnext <span className="text-orange-500">Web App Development</span> Services
-      </h2>
-      <p className="text-gray-300 text-lg mt-3">
-        Scalable, secure, and innovative digital solutions tailored for your business.
-      </p>
-    </div>
-
-    {/* 3x3 Grid with Large Cards */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-      {[
-        { title: "E-commerce Solutions", desc: "Scalable online stores with secure payments." },
-        { title: "Healthcare Platforms", desc: "HIPAA-compliant apps for patient management." },
-        { title: "Finance & FinTech", desc: "Secure apps for banking, trading, and payments." },
-        { title: "EdTech Solutions", desc: "Interactive learning platforms & LMS systems." },
-        { title: "SaaS Development", desc: "Cloud-based apps with subscription models." },
-        { title: "Real Estate Apps", desc: "Feature-rich property listing & CRM tools." },
-        { title: "Travel & Hospitality", desc: "Booking engines and AI-powered recommendations." },
-        { title: "Logistics & Supply Chain", desc: "Tracking, inventory, and delivery management." },
-        { title: "AI & Automation", desc: "AI-driven chatbots and business automation." }
-      ].map((service, index) => (
-        <div 
-          key={index} 
-          className="p-6 border border-gray-600 rounded-xl shadow-lg text-center bg-[#1F2A55] transition-transform transform hover:scale-105 hover:border-orange-500"
-        >
-          <h3 className="text-lg font-bold text-white">{service.title}</h3>
-          <p className="text-sm text-gray-300 mt-2">{service.desc}</p>
+      <section className="container mx-auto px-6 py-12 text-center bg-[#161E42] text-white">
+        {/* Centered Heading */}
+        <div className="mb-8">
+          <h2 className="text-4xl font-extrabold text-white">Choose Your <span className="text-orange-500">Tech Stack</span></h2>
+          <p className="text-gray-300 text-lg mt-3 max-w-2xl mx-auto">
+            Select the best technologies for your web application, ensuring high performance, scalability, and seamless user experience.
+          </p>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+
+        {/* Tab Container */}
+        <div className="bg-[#1F2A55] p-8 rounded-xl shadow-xl border border-gray-700">
+          {/* Tabs Aligned Center */}
+          <div className="flex flex-wrap justify-center gap-4 border-b border-gray-600 pb-4">
+            {stacks.map((stack) => (
+              <button
+                key={stack.id}
+                onClick={() => setActiveTab(stack.id)}
+                className={`p-4 rounded-lg transition-all flex flex-col items-center w-28 ${activeTab === stack.id
+                    ? "bg-orange-500 text-white shadow-lg border-orange-500"
+                    : "bg-gray-700 text-gray-300 border border-gray-600 hover:border-orange-400 transition-all"
+                  }`}
+              >
+                <img src={stack.icon} alt={stack.name} className="w-12 h-12" />
+                <span className="text-sm mt-2 font-medium">{stack.name}</span>
+              </button>
+            ))}
+          </div>
+
+          {/* Tab Content */}
+          <div className="mt-6 p-6 bg-gray-800 rounded-lg shadow-lg border border-gray-700">
+            <h3 className="text-2xl font-semibold text-white">
+              {stacks.find((stack) => stack.id === activeTab)?.name}
+            </h3>
+            <p className="text-gray-300 text-lg mt-2">
+              Why choose <span className="text-orange-400">{stacks.find((stack) => stack.id === activeTab)?.name}</span>?
+            </p>
+            <ul className="mt-4 text-gray-300 text-lg text-left mx-auto max-w-lg space-y-3">
+              {stacks
+                .find((stack) => stack.id === activeTab)
+                ?.content.map((benefit, index) => (
+                  <li key={index} className="flex items-center gap-3">
+                    <span className="text-orange-400 text-lg">✔</span> {benefit}
+                  </li>
+                ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="container mx-auto px-6 py-12 bg-[#161E42] text-white">
+        {/* Heading */}
+        <div className="text-center">
+          <h2 className="text-4xl font-extrabold text-white">Our <span className="text-orange-500">Work Process</span></h2>
+          <p className="text-gray-300 text-lg mt-3">Step-by-step workflow to ensure quality, efficiency, and seamless execution.</p>
+        </div>
+
+        {/* Horizontal Timeline Container */}
+        <div className="mt-12 flex overflow-x-auto hide-scrollbar space-x-6 px-4">
+          {steps.map((step) => (
+            <div
+              key={step.id}
+              className="flex flex-col items-center text-center bg-[#1F2A55] shadow-lg p-6 rounded-xl border border-gray-700 transition-all min-w-[220px] hover:border-orange-500"
+            >
+              {/* Step Icon */}
+              <div className="w-16 h-16 flex items-center justify-center bg-gray-700 border-4 border-orange-500 rounded-full shadow-lg text-3xl text-orange-400">
+                {step.icon}
+              </div>
+
+              {/* Step Content */}
+              <div className="mt-4">
+                <h4 className="text-xl font-semibold text-white">{step.title}</h4>
+                <p className="text-gray-300 text-sm mt-2">{step.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+        {/* Divider */}
+      <div className="bg-[#161E42] py-8">
+        <div className="container mx-auto px-6">
+          <hr className="border-t-2 border-gray-700" />
+        </div>
+      </div>
 
 
 
-<section className="bg-[#161E42] text-white py-10">
+      <section className="bg-[#161E42] text-white py-12">
+        <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8 text-center">
+          {/* Heading with HR Line */}
+          <div className="max-w-md mx-auto">
+            <hr className="w-12 h-[4px] bg-orange-500 mx-auto mb-4 rounded-full" />
+            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+              SaaSnext <span className="text-orange-500">Web App Development</span> Services
+            </h2>
+            <p className="text-gray-300 text-lg mt-3">
+              Scalable, secure, and innovative digital solutions tailored for your business.
+            </p>
+          </div>
+
+          {/* 3x3 Grid with Large Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+            {[
+              { title: "E-commerce Solutions", desc: "Scalable online stores with secure payments." },
+              { title: "Healthcare Platforms", desc: "HIPAA-compliant apps for patient management." },
+              { title: "Finance & FinTech", desc: "Secure apps for banking, trading, and payments." },
+              { title: "EdTech Solutions", desc: "Interactive learning platforms & LMS systems." },
+              { title: "SaaS Development", desc: "Cloud-based apps with subscription models." },
+              { title: "Real Estate Apps", desc: "Feature-rich property listing & CRM tools." },
+              { title: "Travel & Hospitality", desc: "Booking engines and AI-powered recommendations." },
+              { title: "Logistics & Supply Chain", desc: "Tracking, inventory, and delivery management." },
+              { title: "AI & Automation", desc: "AI-driven chatbots and business automation." }
+            ].map((service, index) => (
+              <div
+                key={index}
+                className="p-6 border border-gray-600 rounded-xl shadow-lg text-center bg-[#1F2A55] transition-transform transform hover:scale-105 hover:border-orange-500"
+              >
+                <h3 className="text-lg font-bold text-white">{service.title}</h3>
+                <p className="text-sm text-gray-300 mt-2">{service.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+  {/* Divider */}
+  <div className="bg-[#161E42] py-8">
+        <div className="container mx-auto px-6">
+          <hr className="border-t-2 border-gray-700" />
+        </div>
+      </div>
+
+
+
+      <section className="bg-[#161E42] text-white py-10">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           {/* Section Heading */}
           <div className="text-center mb-10">
@@ -581,78 +598,47 @@ export default function Home() {
         </div>
       </section>
 
-        
-{/* New Section: Left-Aligned Heading and Description */}
-<section className="bg-[#161E42] text-white py-20">
+
+      <section className="bg-[#161E42] text-white py-20">
   <div className="container mx-auto px-6">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-      {/* Left Side: Content - Business Problems & Solutions */}
+
+      {/* Left Side: Heading & Description */}
       <div className="md:text-left">
-        <h2 className="text-4xl font-extrabold mb-4">
+        <h2 className="text-4xl font-extrabold mb-4 leading-tight">
           <span className="text-orange-500">Overcome</span> Your Digital Challenges
         </h2>
-        <p className="text-lg text-gray-300 mb-6">
-          Are you struggling to keep up with the ever-evolving digital landscape?  Many businesses face challenges like outdated websites, inefficient workflows, and difficulty reaching their target audience. At SaaSnext, we understand these hurdles and provide tailored solutions to help you thrive.
+        <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+          Are you struggling to keep up with the ever-evolving digital landscape? Many businesses face challenges like outdated websites, inefficient workflows, and difficulty reaching their target audience. At SaaSnext, we understand these hurdles and provide tailored solutions to help you thrive.
         </p>
-        <p className="text-lg text-gray-300 mb-6">
+        <p className="text-lg text-gray-300 mb-6 leading-relaxed">
           Whether you're battling low online visibility, struggling to convert leads, or need to streamline your operations, we're here to help. We craft custom web applications, implement cutting-edge marketing strategies, and leverage technology to solve your unique business problems.
         </p>
-        <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
-          Get Started Today
-        </button>
+     
       </div>
 
-      {/* Right Side: Content Description - How SaaSnext Helps */}
-      <div className="md:text-left">
-        <h3 className="text-2xl font-semibold mb-4">
-          How SaaSnext Drives Your Success
-        </h3>
-        <p className="text-gray-300 mb-4">
-          We don't just build websites; we build solutions that address your core business challenges. Here's how we help you succeed:
-        </p>
-        <ul className="list-disc list-inside text-gray-300">
-          <li className="mb-2">
-            <span className="font-semibold text-white">
-              Boost Online Visibility:
-            </span>{" "}
-            We optimize your web presence to attract more organic traffic and reach your ideal customers.
-          </li>
-          <li className="mb-2">
-            <span className="font-semibold text-white">
-              Streamline Operations:
-            </span>{" "}
-            Our custom web applications automate workflows, improve efficiency, and reduce operational costs.
-          </li>
-          <li className="mb-2">
-            <span className="font-semibold text-white">
-              Convert Leads into Customers:
-            </span>{" "}
-            We implement data-driven marketing strategies to nurture leads and drive conversions.
-          </li>
-          <li className="mb-2">
-            <span className="font-semibold text-white">
-              Scale with Confidence:
-            </span>{" "}
-            Our scalable solutions grow with your business, ensuring you're always prepared for the future.
-          </li>
-          <li>
-            <span className="font-semibold text-white">
-              Stay Ahead of the Curve:
-            </span>{" "}
-            We leverage the latest technologies and trends to keep your business at the forefront of innovation.
-          </li>
-        </ul>
+      {/* Right Side: Image */}
+      <div className="flex justify-center md:justify-end">
+        <img
+          src="/images/saasnext-solutions.jpg"
+          alt="Digital Solutions Illustration"
+          className="max-w-full w-[90%] md:w-[500px] rounded-xl shadow-lg"
+        />
       </div>
     </div>
   </div>
 </section>
 
-         {/* Divider */}
+
+      {/* Divider */}
       <div className="bg-[#161E42] py-8">
         <div className="container mx-auto px-6">
           <hr className="border-t-2 border-gray-700" />
         </div>
       </div>
+
+
+
 
       {/* New Section: One-Column Layout, Center-Aligned Text */}
       <section className="bg-[#161E42] text-white py-20">
@@ -680,8 +666,8 @@ export default function Home() {
           </button>
         </div>
       </section>
-                              
 
+     
 
     </>
   );
@@ -775,12 +761,12 @@ const EmailIcon = () => (
 
     {/* Envelope Flap - With Animation */}
     <path d="M60,80 L200,160 L340,80 L340,80 L60,80 Z" fill="url(#envelopeGradient)" stroke="#333" strokeWidth="3">
-      <animate attributeName="d" 
-               values="M60,80 L200,160 L340,80 L340,80 L60,80 Z;
+      <animate attributeName="d"
+        values="M60,80 L200,160 L340,80 L340,80 L60,80 Z;
                       M60,80 L200,160 L340,80 L340,40 L60,40 L60,80 Z;
-                      M60,80 L200,160 L340,80 L340,80 L60,80 Z" 
-               dur="3s" 
-               repeatCount="indefinite" />
+                      M60,80 L200,160 L340,80 L340,80 L60,80 Z"
+        dur="3s"
+        repeatCount="indefinite" />
     </path>
 
     {/* Envelope Bottom Fold Line */}
