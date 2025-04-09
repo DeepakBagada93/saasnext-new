@@ -1,7 +1,7 @@
 "use client";
 
 
-
+import ContactForm from './components/ContactForm';
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -355,7 +355,9 @@ export default function Home() {
         </div>
       </section>
 
+      <ContactForm />
 
+  
       <section className="container mx-auto px-6 py-12 bg-[#161E42] text-white">
         {/* Heading */}
         <div className="text-center">
