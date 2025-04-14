@@ -2,6 +2,9 @@
 
 
 import ContactForm from './components/ContactForm';
+import AnimatedServices from './components/AnimatedServices';
+import ReactCodeDisplay from './components/ReactCodeDisplay';
+import BusinessGrowthChart from './components/BusinessGrowthChart';
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -238,6 +241,8 @@ export default function Home() {
   </div>
 </section>
 
+      <AnimatedServices/>
+
 
       <div className="flex flex-col items-center justify-center mt-16 px-4 md:px-6 lg:px-12 w-full">
   {/* Flowchart Container */}
@@ -355,9 +360,9 @@ export default function Home() {
         </div>
       </section>
 
+      <ReactCodeDisplay/>          
       <ContactForm />
-
-  
+       <BusinessGrowthChart/>
       <section className="container mx-auto px-6 py-12 bg-[#161E42] text-white">
         {/* Heading */}
         <div className="text-center">

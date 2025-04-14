@@ -1,3 +1,8 @@
+"use client";
+
+
+
+
 export default function Contact() {
   return (
     <>
@@ -10,6 +15,7 @@ export default function Contact() {
     </p>
   </div>
 </section>
+
 
 
 <section className="w-full bg-[#161E42] py-16 px-6">

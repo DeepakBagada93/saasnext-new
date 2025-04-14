@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 
-// Define constants outside the component
 const initialFormData = {
   name: "",
   email: "",
@@ -18,11 +17,11 @@ const services = [
 const ContactForm = () => {
   const [formData, setFormData] = useState(initialFormData);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null); // { success: boolean, message: string } | null
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
@@ -38,135 +37,164 @@ const ContactForm = () => {
       });
 
       if (!response.ok) {
-        let errorMessage = `API Error: ${response.statusText}`;
+        let message = `API Error: ${response.statusText}`;
         try {
           const errorData = await response.json();
-          errorMessage = errorData.message || errorMessage;
-        } catch (parseError) {
-          console.error("Error parsing error response:", parseError);
-        }
-        throw new Error(errorMessage);
+          message = errorData.message || message;
+        } catch {}
+        throw new Error(message);
       }
 
       setSubmitStatus({
         success: true,
-        message: "Thank you! We'll contact you soon.",
+        message: "Thank you! We will get in touch shortly.",
       });
       setFormData(initialFormData);
-
     } catch (error) {
-      console.error("Submission Error:", error);
       setSubmitStatus({
         success: false,
-        message: error.message || "Failed to send message. Please try again.",
+        message: error.message || "Something went wrong.",
       });
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  // Base input/select classes for dark theme
-  const inputBaseClasses = "w-full px-4 py-2.5 rounded-lg bg-[#1f2a55] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent placeholder-gray-400";
+  const inputBaseClasses =
+    "w-full px-4 py-2.5 rounded-lg bg-[#1f2a55] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder-gray-400";
 
   return (
-    // Apply dark background, white text, padding, and rounded corners
-    <div className="max-w-lg mx-auto p-8 bg-[#161e42] rounded-xl shadow-lg my-10 border border-gray-700">
-      <h2 className="text-3xl font-bold mb-6 text-white text-center">
-        Get in Touch
-      </h2>
-      <form onSubmit={handleSubmit} className="space-y-5">
+    <div className="max-w-6xl mx-auto p-8 bg-[#161e42] rounded-2xl shadow-xl my-12 border border-gray-700">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {/* LEFT SIDE – FORM */}
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
-            Your Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="e.g., John Doe"
-            required
-            aria-required="true"
-            className={inputBaseClasses}
-          />
+          <h2 className="text-4xl font-bold mb-4 text-white">
+            Let’s Build Something Great Together 🚀
+          </h2>
+          <p className="text-gray-300 mb-8">
+            Have an idea or project in mind? Share the details, and we’ll help you turn it into a powerful solution.
+          </p>
+
+          <form onSubmit={handleSubmit} className="space-y-5">
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
+                Your Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="John Doe"
+                value={formData.name}
+                onChange={handleChange}
+                className={inputBaseClasses}
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
+                Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="john@example.com"
+                value={formData.email}
+                onChange={handleChange}
+                className={inputBaseClasses}
+              />
+            </div>
+            <div>
+              <label htmlFor="whatsapp" className="block text-sm font-medium text-gray-300 mb-1">
+                WhatsApp Number
+              </label>
+              <input
+                type="tel"
+                id="whatsapp"
+                name="whatsapp"
+                placeholder="+91 12345 67890"
+                value={formData.whatsapp}
+                onChange={handleChange}
+                className={inputBaseClasses}
+              />
+            </div>
+            <div>
+              <label htmlFor="service" className="block text-sm font-medium text-gray-300 mb-1">
+                I am interested in
+              </label>
+              <select
+                id="service"
+                name="service"
+                required
+                value={formData.service}
+                onChange={handleChange}
+                className={`${inputBaseClasses} appearance-none`}
+              >
+                <option value="" disabled>
+                  -- Select Service --
+                </option>
+                {services.map((service) => (
+                  <option key={service} value={service}>
+                    {service}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="w-full bg-orange-500 text-white py-2.5 px-4 rounded-lg font-semibold hover:bg-orange-600 transition disabled:bg-orange-700"
+            >
+              {isSubmitting ? "Submitting..." : "Submit Request"}
+            </button>
+          </form>
+
+          {submitStatus && (
+            <div
+              role="alert"
+              className={`mt-5 p-3 rounded-lg text-sm font-medium ${
+                submitStatus.success
+                  ? "bg-green-800 text-green-200"
+                  : "bg-red-800 text-red-200"
+              }`}
+            >
+              {submitStatus.message}
+            </div>
+          )}
         </div>
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
-            Your Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="e.g., john.doe@example.com"
-            required
-            aria-required="true"
-            className={inputBaseClasses}
-          />
+
+        {/* RIGHT SIDE – HOOK CONTENT */}
+        <div className="flex flex-col justify-center text-white space-y-6">
+          <h3 className="text-3xl font-bold leading-tight">
+            Your Vision, <span className="text-orange-500">Our Code.</span>
+          </h3>
+          <p className="text-gray-300 text-lg">
+            We specialize in helping brands launch fast, scale smart, and grow with impact.
+          </p>
+
+          <div className="space-y-4">
+            <div className="bg-[#1f2a55] rounded-xl p-4 border border-gray-600">
+              <h4 className="font-semibold text-lg">⚡ Fast Development</h4>
+              <p className="text-gray-400 text-sm">From concept to launch in record time.</p>
+            </div>
+            <div className="bg-[#1f2a55] rounded-xl p-4 border border-gray-600">
+              <h4 className="font-semibold text-lg">💡 Growth-Oriented</h4>
+              <p className="text-gray-400 text-sm">Built for leads, conversions, and scale.</p>
+            </div>
+            <div className="bg-[#1f2a55] rounded-xl p-4 border border-gray-600">
+              <h4 className="font-semibold text-lg">🤝 Human-Centered</h4>
+              <p className="text-gray-400 text-sm">We focus on clarity, collaboration, and long-term value.</p>
+            </div>
+          </div>
+
+          <p className="text-sm text-gray-500 pt-4">
+            100+ brands trust us to bring their digital ideas to life. Let’s connect today.
+          </p>
         </div>
-        <div>
-          <label htmlFor="whatsapp" className="block text-sm font-medium text-gray-300 mb-1">
-            WhatsApp Number (Optional)
-          </label>
-          <input
-            type="tel"
-            id="whatsapp"
-            name="whatsapp"
-            value={formData.whatsapp}
-            onChange={handleChange}
-            placeholder="e.g., +1 123 456 7890"
-            className={inputBaseClasses}
-          />
-        </div>
-        <div>
-          <label htmlFor="service" className="block text-sm font-medium text-gray-300 mb-1">
-            Service Interested In
-          </label>
-          <select
-            id="service"
-            name="service"
-            value={formData.service}
-            onChange={handleChange}
-            required
-            aria-required="true"
-            className={`${inputBaseClasses} appearance-none`} // Added appearance-none for custom arrow styling if needed
-          >
-            <option value="" disabled className="text-gray-500">-- Select a Service --</option>
-            {services.map((service) => (
-              <option key={service} value={service} className="bg-[#1f2a55] text-white">
-                {service}
-              </option>
-            ))}
-          </select>
-          {/* Basic custom arrow - adjust styling as needed */}
-          {/* <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
-            <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-          </div> */}
-        </div>
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className="w-full bg-orange-500 text-white py-2.5 px-4 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-200 ease-in-out disabled:bg-orange-700 disabled:opacity-70 disabled:cursor-not-allowed"
-        >
-          {isSubmitting ? "Sending..." : "Send Message"}
-        </button>
-      </form>
-      {submitStatus && (
-        <div
-          role="alert"
-          aria-live="assertive"
-          className={`mt-5 p-3 rounded-lg text-sm font-medium ${
-            submitStatus.success
-              ? "bg-green-900 bg-opacity-50 text-green-300 border border-green-700" // Adjusted for dark theme
-              : "bg-red-900 bg-opacity-50 text-red-300 border border-red-700" // Adjusted for dark theme
-          }`}
-        >
-          {submitStatus.message}
-        </div>
-      )}
+      </div>
     </div>
   );
 };
