@@ -206,6 +206,116 @@ export default function Home() {
   
 </section>
 
+<section className="container mx-auto bg-[#161E42] text-white px-4 mt-[15px] mb-[15px] py-10">
+  <div className="space-y-6 text-left">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+      Saasnext: Powering Your Business with the Leading Webapp Development Company in Junagadh
+    </h1>
+
+    <p className="text-lg sm:text-xl text-slate-300">
+      Is your business struggling to stand out in the digital world?
+    </p>
+
+    <p className="text-lg sm:text-xl text-slate-300">
+      Do you feel like you're navigating a maze with outdated technology, while your competitors sprint ahead?
+    </p>
+
+    <p className="text-lg sm:text-xl text-slate-300">
+      Don&apos;t let ineffective marketing or clunky, unresponsive websites hold you back from achieving your true potential.
+    </p>
+
+    <p className="text-lg sm:text-xl text-slate-300">
+      In today's fast-paced digital landscape, a powerful web presence is no longer a luxury – it's a necessity. It's the engine that drives growth, the stage where your brand performs, and the conduit that connects you with your customers. At Saasnext, the premier webapp development company in Junagadh, we understand this imperative, and we're passionate about transforming your vision into a dynamic, engaging, and results-driven reality.
+    </p>
+
+    <p className="text-lg sm:text-xl text-slate-300">
+      We don't just build web applications; we craft digital experiences. We're not just developers; we're your partners in navigating the ever-evolving technological frontier. Whether you're a nimble startup looking to disrupt the market or an established enterprise seeking to optimize your operations, our tailored solutions are designed to empower you to thrive.
+    </p>
+
+    <div className="pt-4">
+      <a
+        href="#contact"
+        className="inline-block px-6 py-3 bg-green-500 text-white font-semibold rounded-full shadow-md hover:bg-green-600 transition-colors"
+      >
+        Let’s Build Your Web App
+      </a>
+    </div>
+  </div>
+</section>
+
+<section className="container mx-auto bg-[#1F2A56] text-white px-4 py-16 mt-8 mb-8">
+  <div className="max-w-6xl mx-auto text-left mb-12">
+    <h2 className="text-3xl sm:text-4xl font-bold mb-4">What We Offer</h2>
+    <p className="text-lg sm:text-xl text-slate-300">
+      As a leading webapp development company in Junagadh, we deliver tailored digital solutions to accelerate your business growth.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    {/* Card 1 */}
+    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+      <div className="text-green-400 text-3xl mb-4">🛠️</div>
+      <h3 className="text-xl font-semibold mb-2">Custom Web App Development</h3>
+      <p className="text-slate-300 text-base">
+        We design and develop tailor-made web applications to solve your unique business challenges — from enterprise tools to e-commerce platforms.
+      </p>
+    </div>
+
+    {/* Card 2 */}
+    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+      <div className="text-green-400 text-3xl mb-4">📱</div>
+      <h3 className="text-xl font-semibold mb-2">Responsive Web Design</h3>
+      <p className="text-slate-300 text-base">
+        Your app will look stunning and perform flawlessly on all devices, ensuring a consistent and seamless experience for every user.
+      </p>
+    </div>
+
+    {/* Card 3 */}
+    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+      <div className="text-green-400 text-3xl mb-4">🛒</div>
+      <h3 className="text-xl font-semibold mb-2">E-commerce Solutions</h3>
+      <p className="text-slate-300 text-base">
+        Launch or scale your online store with powerful features — from product catalogs to secure payment integrations and user-friendly checkout flows.
+      </p>
+    </div>
+
+    {/* Card 4 */}
+    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+      <div className="text-green-400 text-3xl mb-4">📝</div>
+      <h3 className="text-xl font-semibold mb-2">Content Management Systems</h3>
+      <p className="text-slate-300 text-base">
+        Gain full control over your website content with intuitive CMS solutions — no coding required.
+      </p>
+    </div>
+
+    {/* Card 5 */}
+    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+      <div className="text-green-400 text-3xl mb-4">🔄</div>
+      <h3 className="text-xl font-semibold mb-2">Web App Modernization</h3>
+      <p className="text-slate-300 text-base">
+        We breathe new life into outdated apps by enhancing UI, optimizing performance, and ensuring modern tech compatibility.
+      </p>
+    </div>
+
+    {/* Card 6 */}
+    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+      <div className="text-green-400 text-3xl mb-4">🔗</div>
+      <h3 className="text-xl font-semibold mb-2">API Development & Integration</h3>
+      <p className="text-slate-300 text-base">
+        Connect and expand your systems with robust, secure, and scalable API solutions for third-party or internal integrations.
+      </p>
+    </div>
+
+    {/* Card 7 */}
+    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+      <div className="text-green-400 text-3xl mb-4">🔧</div>
+      <h3 className="text-xl font-semibold mb-2">Ongoing Support & Maintenance</h3>
+      <p className="text-slate-300 text-base">
+        We provide continuous updates, security patches, and performance enhancements to keep your application running at its best.
+      </p>
+    </div>
+  </div>
+</section>
 
 
 <section className="container mx-auto px-6 py-20 bg-[#161E42] text-white">
@@ -217,8 +327,9 @@ export default function Home() {
         Why Choose <span className="text-orange-500">Saasnext?</span>
       </h2>
       <p className="text-lg text-gray-300 leading-relaxed">
-        We provide cutting-edge digital solutions customized to your business needs. 
-        Our expert team blends innovation and dedication to ensure measurable success.
+      We have a proven track record of delivering high-quality web applications across a wide range of industries. Our team comprises seasoned professionals with deep expertise in the latest web technologies. As a leading webapp development company in Junagadh, we understand the local market dynamics and combine them with global best practices to provide cutting-edge solutions.
+
+
       </p>
     </div>
 
