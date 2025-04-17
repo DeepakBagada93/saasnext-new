@@ -26,6 +26,8 @@ export default SaasnextApp;`;
   useEffect(() => {
     let index = 0;
     const typingSpeed = 30;
+
+    // Create blinking cursor
     const cursor = document.createElement('span');
     cursor.style.display = 'inline-block';
     cursor.style.width = '0.75rem';
@@ -76,32 +78,42 @@ export default SaasnextApp;`;
 
   return (
     <div className="bg-[#161E42] text-white flex flex-col items-center justify-center min-h-screen px-4 py-10">
-      <div className="max-w-5xl w-full flex flex-wrap justify-between items-start p-8">
-        {/* Code Box */}
-        <div
-          ref={codeDisplayRef}
-          className="bg-slate-800 text-slate-50 p-6 rounded-xl shadow-md font-mono text-sm leading-6 overflow-x-auto whitespace-pre-wrap border border-slate-700 w-full md:w-[45%] min-w-[300px] mb-8"
-        ></div>
+      {/* Main Content */}
+      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
+        {/* Code Display Section */}
+        <div className="relative bg-slate-800 text-slate-50 p-6 rounded-xl shadow-md font-mono text-sm leading-6 overflow-x-auto whitespace-pre-wrap border border-slate-700">
+          <div
+            ref={codeDisplayRef}
+            className="code-display"
+          ></div>
+        </div>
 
-        {/* Image */}
-        <div className="w-full md:w-[45%] min-w-[300px] mb-8">
+        {/* Image Section */}
+        <div className="flex flex-col justify-center items-center space-y-4">
           <img
             src="/images/saasnext-solutions.jpg"
             alt="Responsive Web App"
-            className="rounded-xl shadow-md"
+            className="rounded-xl shadow-md max-w-full h-auto object-cover"
+            onError={(e) => {
+              e.target.src = '/images/fallback-image.jpg'; // Fallback image
+            }}
           />
+          <p className="text-center text-gray-400 text-sm mt-2">
+            A modern responsive web app built with Saasnext.
+          </p>
         </div>
       </div>
 
-      {/* Email box */}
+      {/* Email Preview Section */}
       {showEmail && (
-        <div className="bg-white text-black rounded-xl shadow-md p-6 w-full max-w-3xl mt-4 fade-in">
+        <div className="mt-8 bg-white text-black rounded-xl shadow-md p-6 w-full max-w-3xl mx-auto fade-in">
           <p className="font-semibold text-lg mb-2">✉️ Email Preview</p>
           <p><strong>Subject:</strong> {subject}</p>
           <p className="mt-2"><strong>Description:</strong> {description}</p>
         </div>
       )}
 
+      {/* CSS Animations */}
       <style jsx>{`
         @keyframes blink-animation {
           to {

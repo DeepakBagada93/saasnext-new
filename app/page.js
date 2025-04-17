@@ -187,135 +187,180 @@ export default function Home() {
 
 
   return (
-    <>
+    <main className="min-h-screen bg-[#161E42]">
+      {/* Hero Section - Adjusted spacing and vertical alignment */}
+      <section className="relative min-h-screen flex flex-col items-center justify-center bg-[#161E42] text-white px-6 text-center overflow-hidden transition-all duration-1000">
+        <div className="mb-16 transition-all duration-500 transform scale-110">
+          {headings[currentIndex].diagram}
+        </div>
 
+        <h1 className="text-5xl md:text-7xl font-bold transition-opacity duration-500 mb-8">
+          {headings[currentIndex].text}
+        </h1>
 
-<section className="relative h-screen flex flex-col items-center justify-center bg-[#161E42] text-white px-6 text-center overflow-hidden transition-all duration-1000 mt-40 md:mt-0">
-  <div className="mb-16 transition-all duration-500 transform scale-110">
-    {headings[currentIndex].diagram}
-  </div>
+        <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+          Transform your ideas into high-performing solutions and grow your business with smart strategies.
+        </p>
+      </section>
 
-  <h1 className="text-5xl md:text-7xl font-bold transition-opacity duration-500">
-    {headings[currentIndex].text}
-  </h1>
+      {/* Introduction Section - Consistent spacing */}
+<section className="container mx-auto bg-[#161E42] text-white px-8 py-28">
+  <div className="max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      {/* Left column with enhanced content */}
+      <div className="space-y-8">
+        <div 
+          className="inline-block px-6 py-3 bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600 rounded-full 
+                     text-sm font-semibold mb-4 animate-pulse shadow-lg shadow-orange-500/20"
+        >
+          #1 Web Development Company in Junagadh
+        </div>
+        
+        <h1 className="text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
+          Transform Your 
+          <span className="bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent"> Digital Presence </span>
+          with SaasNext
+        </h1>
 
-  <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl">
-    Transform your ideas into high-performing solutions and grow your business with smart strategies.
-  </p>
+        <div className="space-y-6 text-xl text-gray-300">
+          <p className="border-l-4 border-orange-500 pl-6 leading-relaxed">
+            In today's digital landscape, a powerful web presence isn't just an option—it's essential for business growth and success.
+          </p>
+          
+          <p className="leading-relaxed">
+            At SaasNext, we combine cutting-edge technology with strategic innovation to create web solutions that drive real business results. As Junagadh's premier web development company, we transform your vision into powerful, scalable digital experiences.
+          </p>
+        </div>
 
-  
-</section>
+        <div className="flex flex-wrap gap-6 mt-10">
+          <a
+            href="#contact"
+            className="group px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-xl
+                     shadow-lg hover:shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <span className="flex items-center gap-2">
+              Start Your Project
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </a>
+          <a
+            href="#services"
+            className="group px-8 py-4 border-2 border-orange-500 text-orange-500 font-semibold rounded-xl
+                     hover:bg-orange-500 hover:text-white transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <span className="flex items-center gap-2">
+              Explore Services
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
 
-<section className="container mx-auto bg-[#161E42] text-white px-4 mt-[15px] mb-[15px] py-10">
-  <div className="space-y-6 text-left">
-    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-      Saasnext: Powering Your Business with the Leading Webapp Development Company in Junagadh
-    </h1>
-
-    <p className="text-lg sm:text-xl text-slate-300">
-      Is your business struggling to stand out in the digital world?
-    </p>
-
-    <p className="text-lg sm:text-xl text-slate-300">
-      Do you feel like you're navigating a maze with outdated technology, while your competitors sprint ahead?
-    </p>
-
-    <p className="text-lg sm:text-xl text-slate-300">
-      Don&apos;t let ineffective marketing or clunky, unresponsive websites hold you back from achieving your true potential.
-    </p>
-
-    <p className="text-lg sm:text-xl text-slate-300">
-      In today's fast-paced digital landscape, a powerful web presence is no longer a luxury – it's a necessity. It's the engine that drives growth, the stage where your brand performs, and the conduit that connects you with your customers. At Saasnext, the premier webapp development company in Junagadh, we understand this imperative, and we're passionate about transforming your vision into a dynamic, engaging, and results-driven reality.
-    </p>
-
-    <p className="text-lg sm:text-xl text-slate-300">
-      We don't just build web applications; we craft digital experiences. We're not just developers; we're your partners in navigating the ever-evolving technological frontier. Whether you're a nimble startup looking to disrupt the market or an established enterprise seeking to optimize your operations, our tailored solutions are designed to empower you to thrive.
-    </p>
-
-    <div className="pt-4">
-      <a
-        href="#contact"
-        className="inline-block px-6 py-3 bg-green-500 text-white font-semibold rounded-full shadow-md hover:bg-green-600 transition-colors"
-      >
-        Let’s Build Your Web App
-      </a>
+      {/* Right column with enhanced stats */}
+      <div className="bg-gradient-to-br from-[#1F2A56] to-[#2B3765] p-10 rounded-3xl shadow-2xl border border-gray-700/50">
+        <div className="grid grid-cols-2 gap-8">
+          {[
+            { stat: "100+", label: "Projects Delivered", icon: "🚀" },
+            { stat: "95%", label: "Client Satisfaction", icon: "⭐" },
+            { stat: "24/7", label: "Support Available", icon: "💪" },
+            { stat: "50+", label: "Expert Developers", icon: "👨‍💻" }
+          ].map((item, index) => (
+            <div 
+              key={index} 
+              className="text-center p-6 bg-[#161E42]/50 rounded-2xl hover:bg-[#161E42]/70 
+                         transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+            >
+              <div className="text-4xl mb-2">{item.icon}</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent">
+                {item.stat}
+              </div>
+              <div className="text-sm text-gray-300 mt-2 font-medium">{item.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section className="container mx-auto bg-[#1F2A56] text-white px-4 py-16 mt-8 mb-8">
-  <div className="max-w-6xl mx-auto text-left mb-12">
-    <h2 className="text-3xl sm:text-4xl font-bold mb-4">What We Offer</h2>
-    <p className="text-lg sm:text-xl text-slate-300">
-      As a leading webapp development company in Junagadh, we deliver tailored digital solutions to accelerate your business growth.
-    </p>
-  </div>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-    {/* Card 1 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">🛠️</div>
-      <h3 className="text-xl font-semibold mb-2">Custom Web App Development</h3>
-      <p className="text-slate-300 text-base">
-        We design and develop tailor-made web applications to solve your unique business challenges — from enterprise tools to e-commerce platforms.
-      </p>
-    </div>
+        <section className="container mx-auto bg-[#1F2A56] text-white px-4 py-16 mt-8 mb-8">
+          <div className="max-w-6xl mx-auto text-left mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">What We Offer</h2>
+            <p className="text-lg sm:text-xl text-slate-300">
+              As a leading webapp development company in Junagadh, we deliver tailored digital solutions to accelerate your business growth.
+            </p>
+          </div>
 
-    {/* Card 2 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">📱</div>
-      <h3 className="text-xl font-semibold mb-2">Responsive Web Design</h3>
-      <p className="text-slate-300 text-base">
-        Your app will look stunning and perform flawlessly on all devices, ensuring a consistent and seamless experience for every user.
-      </p>
-    </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Card 1 */}
+            <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+              <div className="text-green-400 text-3xl mb-4">🛠️</div>
+              <h3 className="text-xl font-semibold mb-2">Custom Web App Development</h3>
+              <p className="text-slate-300 text-base">
+                We design and develop tailor-made web applications to solve your unique business challenges — from enterprise tools to e-commerce platforms.
+              </p>
+            </div>
 
-    {/* Card 3 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">🛒</div>
-      <h3 className="text-xl font-semibold mb-2">E-commerce Solutions</h3>
-      <p className="text-slate-300 text-base">
-        Launch or scale your online store with powerful features — from product catalogs to secure payment integrations and user-friendly checkout flows.
-      </p>
-    </div>
+            {/* Card 2 */}
+            <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+              <div className="text-green-400 text-3xl mb-4">📱</div>
+              <h3 className="text-xl font-semibold mb-2">Responsive Web Design</h3>
+              <p className="text-slate-300 text-base">
+                Your app will look stunning and perform flawlessly on all devices, ensuring a consistent and seamless experience for every user.
+              </p>
+            </div>
 
-    {/* Card 4 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">📝</div>
-      <h3 className="text-xl font-semibold mb-2">Content Management Systems</h3>
-      <p className="text-slate-300 text-base">
-        Gain full control over your website content with intuitive CMS solutions — no coding required.
-      </p>
-    </div>
+            {/* Card 3 */}
+            <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+              <div className="text-green-400 text-3xl mb-4">🛒</div>
+              <h3 className="text-xl font-semibold mb-2">E-commerce Solutions</h3>
+              <p className="text-slate-300 text-base">
+                Launch or scale your online store with powerful features — from product catalogs to secure payment integrations and user-friendly checkout flows.
+              </p>
+            </div>
 
-    {/* Card 5 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">🔄</div>
-      <h3 className="text-xl font-semibold mb-2">Web App Modernization</h3>
-      <p className="text-slate-300 text-base">
-        We breathe new life into outdated apps by enhancing UI, optimizing performance, and ensuring modern tech compatibility.
-      </p>
-    </div>
+            {/* Card 4 */}
+            <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+              <div className="text-green-400 text-3xl mb-4">📝</div>
+              <h3 className="text-xl font-semibold mb-2">Content Management Systems</h3>
+              <p className="text-slate-300 text-base">
+                Gain full control over your website content with intuitive CMS solutions — no coding required.
+              </p>
+            </div>
 
-    {/* Card 6 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">🔗</div>
-      <h3 className="text-xl font-semibold mb-2">API Development & Integration</h3>
-      <p className="text-slate-300 text-base">
-        Connect and expand your systems with robust, secure, and scalable API solutions for third-party or internal integrations.
-      </p>
-    </div>
+            {/* Card 5 */}
+            <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+              <div className="text-green-400 text-3xl mb-4">🔄</div>
+              <h3 className="text-xl font-semibold mb-2">Web App Modernization</h3>
+              <p className="text-slate-300 text-base">
+                We breathe new life into outdated apps by enhancing UI, optimizing performance, and ensuring modern tech compatibility.
+              </p>
+            </div>
 
-    {/* Card 7 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">🔧</div>
-      <h3 className="text-xl font-semibold mb-2">Ongoing Support & Maintenance</h3>
-      <p className="text-slate-300 text-base">
-        We provide continuous updates, security patches, and performance enhancements to keep your application running at its best.
-      </p>
-    </div>
-  </div>
-</section>
+            {/* Card 6 */}
+            <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+              <div className="text-green-400 text-3xl mb-4">🔗</div>
+              <h3 className="text-xl font-semibold mb-2">API Development & Integration</h3>
+              <p className="text-slate-300 text-base">
+                Connect and expand your systems with robust, secure, and scalable API solutions for third-party or internal integrations.
+              </p>
+            </div>
+
+            {/* Card 7 */}
+            <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+              <div className="text-green-400 text-3xl mb-4">🔧</div>
+              <h3 className="text-xl font-semibold mb-2">Ongoing Support & Maintenance</h3>
+              <p className="text-slate-300 text-base">
+                We provide continuous updates, security patches, and performance enhancements to keep your application running at its best.
+              </p>
+            </div>
+          </div>
+        </section>
 
 
 <section className="container mx-auto px-6 py-20 bg-[#161E42] text-white">
@@ -414,12 +459,23 @@ export default function Home() {
       </section>
 
 
-      {/* Divider */}
-      <div className="bg-[#161E42] py-8">
-        <div className="container mx-auto px-6">
-          <hr className="border-t-2 border-gray-700" />
-        </div>
-      </div>
+      {/* Enhanced Section Divider */}
+            <div className="bg-gradient-to-r from-[#161E42] via-[#1F2A56] to-[#161E42] py-12">
+              <div className="container mx-auto px-6">
+                <div className="relative">
+                  <div className="absolute inset-0 flex items-center">
+                    <div className="w-full border-t-2 border-orange-500/20"></div>
+                  </div>
+                  <div className="relative flex justify-center">
+                    <div className="bg-[#1F2A56] px-4 py-2 rounded-full border-2 border-orange-500/20 shadow-lg">
+                      <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14m-7-7l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
       <section className="container mx-auto px-6 py-12 text-center bg-[#161E42] text-white">
@@ -511,241 +567,74 @@ export default function Home() {
 
 
 
-      <section className="bg-[#161E42] text-white py-12">
-        <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8 text-center">
-          {/* Heading with HR Line */}
-          <div className="max-w-md mx-auto">
-            <hr className="w-12 h-[4px] bg-orange-500 mx-auto mb-4 rounded-full" />
-            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              SaaSnext <span className="text-orange-500">Web App Development</span> Services
-            </h2>
-            <p className="text-gray-300 text-lg mt-3">
-              Scalable, secure, and innovative digital solutions tailored for your business.
-            </p>
-          </div>
+      <section className="bg-gradient-to-br from-[#161E42] to-[#1F2A56] text-white py-32 relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute inset-0" style={{
+              backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zM22.344 0L13.858 8.485 15.272 9.9l7.9-7.9h-.828zm5.656 0L19.515 8.485 17.343 10.657l7.9-7.9h2.757zm5.656 0l-6.485 6.485L25.515 8.828 31.9.928h1.757zm5.656 0l-4.242 4.242L33.414 6.586l3.535-3.535h2.122zM2.828 0v2.828l1.414 1.414.829-.828L2.828 0zm5.656 0v1.414l2.243 2.243L9.313 2.243 8.485 0zm5.657 0v.414l3.243 3.243 1.414-1.414L14.142 0zm5.657 0l1.414 1.414 1.414-1.414h-2.828zm5.657 0l2.828 2.828 1.414-1.414L20.485 0zm5.657 0l4.242 4.242 1.414-1.414L26.142 0zm5.656 0l5.657 5.657 1.414-1.414L31.8 0zm5.657 0l7.07 7.07 1.415-1.414L37.456 0zM0 2.828l5.657 5.657L7.07 7.07 1.414 1.414 0 2.828zm0 5.657L7.07 15.556 8.485 14.14 2.828 8.485 0 8.485zm0 5.657l9.192 9.192 1.415-1.414-8.485-8.485L0 14.142zm0 5.657L11.314 30.97l1.414-1.414-9.9-9.9L0 19.8zm0 5.657l13.435 13.435 1.414-1.414-11.313-11.313L0 25.456zm0 5.657L15.556 47.07l1.414-1.414-13.435-13.435L0 31.113zm0 5.657l17.678 17.678 1.414-1.414-15.556-15.556L0 36.77zm0 5.657l19.799 19.8 1.414-1.415L1.414 40.97 0 42.426z" fill="%23ffffff" fill-opacity="1" fill-rule="evenodd"/%3E%3C/svg%3E")',
+          }} />
+        </div>
 
-          {/* 3x3 Grid with Large Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-            {[
-              { title: "E-commerce Solutions", desc: "Scalable online stores with secure payments." },
-              { title: "Healthcare Platforms", desc: "HIPAA-compliant apps for patient management." },
-              { title: "Finance & FinTech", desc: "Secure apps for banking, trading, and payments." },
-              { title: "EdTech Solutions", desc: "Interactive learning platforms & LMS systems." },
-              { title: "SaaS Development", desc: "Cloud-based apps with subscription models." },
-              { title: "Real Estate Apps", desc: "Feature-rich property listing & CRM tools." },
-              { title: "Travel & Hospitality", desc: "Booking engines and AI-powered recommendations." },
-              { title: "Logistics & Supply Chain", desc: "Tracking, inventory, and delivery management." },
-              { title: "AI & Automation", desc: "AI-driven chatbots and business automation." }
-            ].map((service, index) => (
-              <div
-                key={index}
-                className="p-6 border border-gray-600 rounded-xl shadow-lg text-center bg-[#1F2A55] transition-transform transform hover:scale-105 hover:border-orange-500"
+        <div className="container mx-auto px-6 relative">
+          {/* Main Content */}
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block px-6 py-2 bg-orange-500/10 rounded-full text-orange-400 text-sm font-semibold mb-6">
+              🚀 Transform Your Business Today
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              Ready to Transform Your Digital Presence?
+            </h2>
+
+            <div className="space-y-6 mb-12">
+              <p className="text-xl text-gray-300 leading-relaxed">
+                At SaaSnext, we're passionate about helping businesses like yours
+                thrive in the digital age. Whether you're looking to build a
+                cutting-edge web application, boost your online visibility, or
+                streamline your operations, our team of experts is ready to turn
+                your vision into reality.
+              </p>
+              
+              <p className="text-xl text-gray-300 leading-relaxed">
+                We understand that every business is unique, and that's why we take
+                a personalized approach to every project. From initial concept to
+                final launch and beyond, we'll be with you every step of the way.
+              </p>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="#contact"
+                className="group px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl text-white font-semibold 
+                         shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 transition-all duration-300 
+                         transform hover:-translate-y-1 w-full sm:w-auto"
               >
-                <h3 className="text-lg font-bold text-white">{service.title}</h3>
-                <p className="text-sm text-gray-300 mt-2">{service.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-  {/* Divider */}
-  <div className="bg-[#161E42] py-8">
-        <div className="container mx-auto px-6">
-          <hr className="border-t-2 border-gray-700" />
-        </div>
-      </div>
-
-
-
-      <section className="bg-[#161E42] text-white py-10">
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          {/* Section Heading */}
-          <div className="text-center mb-10">
-            <hr className="w-12 h-[3px] bg-white mx-auto mb-3" />
-            <h2 className="text-2xl font-semibold text-white sm:text-3xl">
-              SaaSnext Web App Development Services
-            </h2>
-            <p className="text-gray-300 mt-2">
-              Explore our comprehensive web app development services tailored to
-              meet your unique business needs.
-            </p>
-          </div>
-
-          {/* Four-Column Grid Layout with Variable Sizes */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {/* Large Column */}
-            <div className="md:col-span-2 p-6 border border-gray-500 rounded-lg shadow-md bg-gray-800 transition-colors duration-300 hover:border-[#c55301]">
-              <h3 className="text-lg font-semibold text-white">
-                Custom Web Application Development
-              </h3>
-              <p className="text-sm text-gray-300 mt-2">
-                We build bespoke web applications from the ground up, tailored
-                precisely to your business requirements. Our solutions are
-                scalable, secure, and designed for optimal performance.
-              </p>
-              <ul className="mt-4 text-gray-300 text-sm list-disc list-inside">
-                <li>Requirement Analysis & Planning</li>
-                <li>UI/UX Design & Prototyping</li>
-                <li>Frontend & Backend Development</li>
-                <li>Testing & Quality Assurance</li>
-                <li>Deployment & Maintenance</li>
-              </ul>
-            </div>
-
-            {/* Standard Column */}
-            <div className="p-6 border border-gray-500 rounded-lg shadow-md bg-gray-800 transition-colors duration-300 hover:border-[#c55301]">
-              <h3 className="text-lg font-semibold text-white">
-                E-commerce Solutions
-              </h3>
-              <p className="text-sm text-gray-300 mt-2">
-                Build scalable, high-performance online stores with secure
-                payment integration, inventory management, and seamless UX.
-              </p>
-              <ul className="mt-4 text-gray-300 text-sm list-disc list-inside">
-                <li>Shopping Cart & Checkout</li>
-                <li>Payment Gateway Integration</li>
-                <li>Product Catalog Management</li>
-                <li>Order Tracking & Fulfillment</li>
-              </ul>
-            </div>
-
-            {/* Standard Column */}
-            <div className="p-6 border border-gray-500 rounded-lg shadow-md bg-gray-800 transition-colors duration-300 hover:border-[#c55301]">
-              <h3 className="text-lg font-semibold text-white">
-                Healthcare Platforms
-              </h3>
-              <p className="text-sm text-gray-300 mt-2">
-                Develop HIPAA-compliant healthcare apps with appointment
-                scheduling, telehealth, patient management, and secure data
-                handling.
-              </p>
-              <ul className="mt-4 text-gray-300 text-sm list-disc list-inside">
-                <li>Appointment Scheduling</li>
-                <li>Telehealth & Video Conferencing</li>
-                <li>Patient Portals</li>
-                <li>Secure Data Storage</li>
-              </ul>
-            </div>
-
-            {/* Full-Width Column */}
-            <div className="md:col-span-4 p-6 border border-gray-500 rounded-lg shadow-md bg-gray-800 transition-colors duration-300 hover:border-[#c55301]">
-              <h3 className="text-lg font-semibold text-white">
-                Enterprise SaaS Solutions
-              </h3>
-              <p className="text-sm text-gray-300 mt-2">
-                Cloud-based enterprise applications with automation, analytics,
-                scalable architecture, and robust security features.
-              </p>
-              <ul className="mt-4 text-gray-300 text-sm list-disc list-inside">
-                <li>Custom CRM & ERP Systems</li>
-                <li>Workflow Automation</li>
-                <li>Data Analytics & Reporting</li>
-                <li>Scalable Cloud Infrastructure</li>
-              </ul>
-            </div>
-
-            {/* Standard Column */}
-            <div className="p-6 border border-gray-500 rounded-lg shadow-md bg-gray-800 transition-colors duration-300 hover:border-[#c55301]">
-              <h3 className="text-lg font-semibold text-white">
-                FinTech Applications
-              </h3>
-              <p className="text-sm text-gray-300 mt-2">
-                Secure and efficient financial applications for banking,
-                payments, investment tracking, and regulatory compliance.
-              </p>
-              <ul className="mt-4 text-gray-300 text-sm list-disc list-inside">
-                <li>Payment Processing</li>
-                <li>Investment Tracking</li>
-                <li>Budgeting & Financial Planning</li>
-                <li>Regulatory Compliance</li>
-              </ul>
-            </div>
-
-            {/* Large Column */}
-            <div className="md:col-span-2 p-6 border border-gray-500 rounded-lg shadow-md bg-gray-800 transition-colors duration-300 hover:border-[#c55301]">
-              <h3 className="text-lg font-semibold text-white">
-                EdTech & eLearning
-              </h3>
-              <p className="text-sm text-gray-300 mt-2">
-                Interactive learning platforms with course management, AI-driven
-                recommendations, student engagement tools, and progress
-                tracking.
-              </p>
-              <ul className="mt-4 text-gray-300 text-sm list-disc list-inside">
-                <li>Course Management Systems</li>
-                <li>AI-Driven Recommendations</li>
-                <li>Student Portals</li>
-                <li>Progress Tracking & Analytics</li>
-              </ul>
-            </div>
-
-            {/* Standard Column */}
-            <div className="p-6 border border-gray-500 rounded-lg shadow-md bg-gray-800 transition-colors duration-300 hover:border-[#c55301]">
-              <h3 className="text-lg font-semibold text-white">
-                AI & Automation
-              </h3>
-              <p className="text-sm text-gray-300 mt-2">
-                AI-driven chatbots, business automation tools, machine
-                learning-powered analytics, and intelligent process automation.
-              </p>
-              <ul className="mt-4 text-gray-300 text-sm list-disc list-inside">
-                <li>AI Chatbots</li>
-                <li>Business Process Automation</li>
-                <li>Machine Learning Analytics</li>
-                <li>Intelligent Automation</li>
-              </ul>
-            </div>
-            {/* Standard Column */}
-            <div className="p-6 border border-gray-500 rounded-lg shadow-md bg-gray-800 transition-colors duration-300 hover:border-[#c55301]">
-              <h3 className="text-lg font-semibold text-white">
-                Real Estate Platforms
-              </h3>
-              <p className="text-sm text-gray-300 mt-2">
-                Custom-built property management, listing, and CRM solutions for
-                real estate businesses.
-              </p>
-              <ul className="mt-4 text-gray-300 text-sm list-disc list-inside">
-                <li>Property Listing Management</li>
-                <li>CRM Integration</li>
-                <li>Virtual Tours</li>
-                <li>Lead Management</li>
-              </ul>
+                <span className="flex items-center justify-center gap-2">
+                  Contact Us Today
+                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
+              </a>
+              
+              <a
+                href="#services"
+                className="group px-8 py-4 border-2 border-orange-500 rounded-xl text-orange-400 font-semibold
+                         hover:bg-orange-500 hover:text-white transition-all duration-300
+                         transform hover:-translate-y-1 w-full sm:w-auto"
+              >
+                <span className="flex items-center justify-center gap-2">
+                  View Our Services
+                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </section>
-
-
-      <section className="bg-[#161E42] text-white py-20">
-  <div className="container mx-auto px-6">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-      {/* Left Side: Heading & Description */}
-      <div className="md:text-left">
-        <h2 className="text-4xl font-extrabold mb-4 leading-tight">
-          <span className="text-orange-500">Overcome</span> Your Digital Challenges
-        </h2>
-        <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-          Are you struggling to keep up with the ever-evolving digital landscape? Many businesses face challenges like outdated websites, inefficient workflows, and difficulty reaching their target audience. At SaaSnext, we understand these hurdles and provide tailored solutions to help you thrive.
-        </p>
-        <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-          Whether you're battling low online visibility, struggling to convert leads, or need to streamline your operations, we're here to help. We craft custom web applications, implement cutting-edge marketing strategies, and leverage technology to solve your unique business problems.
-        </p>
-     
-      </div>
-
-      {/* Right Side: Image */}
-      <div className="flex justify-center md:justify-end">
-        <img
-          src="/images/saasnext-solutions.jpg"
-          alt="Digital Solutions Illustration"
-          className="max-w-full w-[90%] md:w-[500px] rounded-xl shadow-lg"
-        />
-      </div>
-    </div>
-  </div>
-</section>
 
 
       {/* Divider */}
@@ -757,37 +646,11 @@ export default function Home() {
 
 
 
-
-      {/* New Section: One-Column Layout, Center-Aligned Text */}
-      <section className="bg-[#161E42] text-white py-20">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-extrabold mb-6">
-            Ready to Transform Your Digital Presence?
-          </h2>
-          <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
-            At SaaSnext, we're passionate about helping businesses like yours
-            thrive in the digital age. Whether you're looking to build a
-            cutting-edge web application, boost your online visibility, or
-            streamline your operations, our team of experts is ready to turn
-            your vision into reality. Let's collaborate to create innovative
-            solutions that drive growth and success.
-          </p>
-          <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
-            We understand that every business is unique, and that's why we take
-            a personalized approach to every project. From initial concept to
-            final launch and beyond, we'll be with you every step of the way,
-            ensuring that your digital solutions are perfectly aligned with your
-            goals.
-          </p>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
-            Contact Us Today
-          </button>
-        </div>
-      </section>
+    
 
      
 
-    </>
+    </main>
   );
 }
 
@@ -880,8 +743,8 @@ const EmailIcon = () => (
     {/* Envelope Flap - With Animation */}
     <path d="M60,80 L200,160 L340,80 L340,80 L60,80 Z" fill="url(#envelopeGradient)" stroke="#333" strokeWidth="3">
       <animate attributeName="d"
-        values="M60,80 L200,160 L340,80 L340,80 L60,80 Z;
-                      M60,80 L200,160 L340,80 L340,40 L60,40 L60,80 Z;
+        values="M60,80 L200,160 L340,80 L340,40 L60,40 L60,80 Z;
+                      M60,80 L200,160 L340,80 L340,80 L60,80 Z;
                       M60,80 L200,160 L340,80 L340,80 L60,80 Z"
         dur="3s"
         repeatCount="indefinite" />
