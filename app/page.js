@@ -4,7 +4,7 @@
 import ContactForm from './components/ContactForm';
 import AnimatedServices from './components/AnimatedServices';
 import ReactCodeDisplay from './components/ReactCodeDisplay';
-import BusinessGrowthChart from './components/BusinessGrowthChart';
+
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -427,43 +427,6 @@ export default function Home() {
 </div>
 
 <section className="container mx-auto bg-[#161E42] text-white px-4 py-16 mt-8 mb-8">
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    
-    {/* Left Column - Image */}
-    <div className="flex justify-center">
-      <img
-        src="/images/saasnext-new2.jpg" // Replace with your actual image path
-        alt="Lead Generation Illustration"
-        className="w-full max-w-md h-auto rounded-xl shadow-lg"
-      />
-    </div>
-
-    {/* Right Column - Text Content */}
-    <div className="space-y-6 text-left">
-      <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
-        Struggling to Get Quality Leads? Let’s Change That!
-      </h2>
-
-      <p className="text-lg text-slate-300">
-        <strong className="text-white">SaaSNext</strong> supercharges your business with targeted lead generation through 
-        <span className="text-green-400 font-semibold"> Meta Ads, X Ads, LinkedIn Ads,</span> and 
-        <span className="text-green-400 font-semibold"> Google Ads</span>. 
-        Our data-driven strategies ensure you connect with the right audience at the right time. 📈
-      </p>
-
-      <div className="pt-4">
-        <a
-          href="#contact"
-          className="inline-block px-6 py-3 bg-green-500 text-white font-semibold rounded-full shadow-md hover:bg-green-600 transition-colors"
-        >
-          Boost Your Leads Now
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section className="container mx-auto bg-[#161E42] text-white px-4 py-16 mt-8 mb-8">
   {/* Banner Image with Enhanced Shadow */}
   <div className="flex justify-center mb-16">
     <img
@@ -476,7 +439,7 @@ export default function Home() {
   {/* Content Section with Improved Layout */}
   <div className="max-w-4xl mx-auto text-center space-y-12">
     <div className="space-y-6">
-      <span className="inline-block px-6 py-2 bg-green-500/10 text-green-400 text-sm font-semibold rounded-full">
+      <span className="inline-block px-6 py-2 bg-orange-500/10 text-orange-400 text-sm font-semibold rounded-full">
         Web Application Development
       </span>
       <h2 className="text-4xl md:text-5xl font-bold leading-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
@@ -486,39 +449,39 @@ export default function Home() {
 
     <p className="text-xl text-gray-300 leading-relaxed">
       At <strong className="text-white">SaaSNext</strong>, we craft high-performance web applications using cutting-edge frameworks like 
-      <span className="text-green-400 font-semibold"> Next.js</span>, 
-      <span className="text-green-400 font-semibold"> Laravel</span>, and 
-      <span className="text-green-400 font-semibold"> Django</span>. 
+      <span className="text-orange-400 font-semibold"> Next.js</span>, 
+      <span className="text-orange-400 font-semibold"> Laravel</span>, and 
+      <span className="text-orange-400 font-semibold"> Django</span>. 
       From sleek UI to robust backend, we bring your vision to life with seamless functionality and scalability.
     </p>
 
     {/* Features Grid replacing bullet points */}
     <div className="grid md:grid-cols-3 gap-8 mt-12">
-      <div className="p-6 bg-[#1F2A56] rounded-xl hover:bg-[#252F5E] transition-colors">
+      <div className="p-6 bg-[#1F2A56] rounded-xl hover:bg-[#252F5E] transition-colors hover:border hover:border-orange-500/50">
         <div className="text-3xl mb-4">💼</div>
-        <h3 className="text-xl font-semibold mb-3">Custom Solutions</h3>
+        <h3 className="text-xl font-semibold mb-3 text-orange-400">Custom Solutions</h3>
         <p className="text-gray-300">Tailored web applications designed specifically for your business needs</p>
       </div>
 
-      <div className="p-6 bg-[#1F2A56] rounded-xl hover:bg-[#252F5E] transition-colors">
+      <div className="p-6 bg-[#1F2A56] rounded-xl hover:bg-[#252F5E] transition-colors hover:border hover:border-orange-500/50">
         <div className="text-3xl mb-4">⚡</div>
-        <h3 className="text-xl font-semibold mb-3">Modern Tech Stack</h3>
+        <h3 className="text-xl font-semibold mb-3 text-orange-400">Modern Tech Stack</h3>
         <p className="text-gray-300">Lightning-fast development with cutting-edge technologies</p>
       </div>
 
-      <div className="p-6 bg-[#1F2A56] rounded-xl hover:bg-[#252F5E] transition-colors">
+      <div className="p-6 bg-[#1F2A56] rounded-xl hover:bg-[#252F5E] transition-colors hover:border hover:border-orange-500/50">
         <div className="text-3xl mb-4">🛠️</div>
-        <h3 className="text-xl font-semibold mb-3">Ongoing Support</h3>
+        <h3 className="text-xl font-semibold mb-3 text-orange-400">Ongoing Support</h3>
         <p className="text-gray-300">Continuous maintenance to keep your app ahead of the curve</p>
       </div>
     </div>
 
-    {/* CTA Button with enhanced styling */}
+    {/* CTA Button with orange styling */}
     <div className="pt-12">
       <a
         href="#contact"
-        className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 
-                 text-white font-semibold rounded-xl shadow-xl hover:shadow-green-500/20 
+        className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 
+                 text-white font-semibold rounded-xl shadow-xl hover:shadow-orange-500/20 
                  transform hover:-translate-y-1 transition-all duration-300"
       >
         Let's Build Something Amazing
@@ -634,7 +597,7 @@ export default function Home() {
 
       <ReactCodeDisplay/>          
       <ContactForm />
-       <BusinessGrowthChart/>
+    
       <section className="container mx-auto px-6 py-12 bg-[#161E42] text-white">
         {/* Heading */}
         <div className="text-center">

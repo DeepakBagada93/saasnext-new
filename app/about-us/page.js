@@ -147,6 +147,82 @@ export default function AboutUs() {
   </div>
 </section>
 
+<section className="container mx-auto px-6 py-12 bg-[#161E42] text-white">
+  {/* Section Title */}
+  <div className="text-center mb-12">
+    <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
+      Who We Are
+    </h2>
+    <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+      At Saasnext, we empower businesses with innovative web app development and data-driven lead generation solutions, helping them achieve sustainable growth.
+    </p>
+  </div>
+
+  {/* Core Expertise Section */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* Web App Development */}
+    <div className="bg-[#1F2A55] p-6 md:p-8 rounded-lg shadow-md border border-gray-700">
+      <div className="flex items-center justify-center w-16 h-16 bg-blue-500 rounded-full mb-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-8 w-8 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          />
+        </svg>
+      </div>
+      <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
+        Custom Web Applications
+      </h3>
+      <p className="text-gray-300 text-base md:text-lg">
+        We design and develop tailored web applications that align with your business goals. From intuitive user interfaces to robust backend systems, we ensure scalability and performance.
+      </p>
+    </div>
+
+    {/* Lead Generation */}
+    <div className="bg-[#1F2A55] p-6 md:p-8 rounded-lg shadow-md border border-gray-700">
+      <div className="flex items-center justify-center w-16 h-16 bg-green-500 rounded-full mb-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-8 w-8 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+          />
+        </svg>
+      </div>
+      <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
+        Data-Driven Lead Generation
+      </h3>
+      <p className="text-gray-300 text-base md:text-lg">
+        Our lead generation strategies leverage advanced analytics and targeted campaigns to deliver high-quality leads. We focus on maximizing ROI and driving measurable results for your business.
+      </p>
+    </div>
+  </div>
+
+  {/* Approach Section */}
+  <div className="mt-12 text-center">
+    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+      Our Commitment
+    </h3>
+    <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+      We believe in building long-term partnerships with our clients. By combining innovation, expertise, and transparency, we deliver solutions that drive success and foster growth.
+    </p>
+  </div>
+</section>
 
 <section className="w-full bg-[#161E42] text-white py-20 px-6 relative overflow-hidden">
   {/* Background Pattern */}
