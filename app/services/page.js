@@ -9,42 +9,380 @@ export default function Services() {
 
   return (
     <>
-      <section className="w-full h-[600px] bg-[#161E42] flex items-center justify-center text-center px-6">
-  <div className="max-w-3xl">
-    <h2 className="text-5xl font-extrabold mb-4 text-white">Welcome to Saasnext</h2>
-    <p className="text-lg text-gray-300">
-      At Saasnext, we specialize in web application development and lead generation, 
-      helping businesses scale with modern technology and digital solutions.
+     <section className="relative w-full h-[600px] bg-gradient-to-br from-[#161E42] to-[#0A1128] flex items-center justify-center text-center px-6 overflow-hidden">
+  {/* Background decorative elements */}
+  <div className="absolute inset-0 z-0 overflow-hidden">
+    {/* Animated gradient overlay */}
+    <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 via-blue-500/20 to-pink-500/30 animate-pulse"></div>
+
+    {/* Floating circles */}
+    <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-purple-500 rounded-full opacity-20 blur-3xl animate-float"></div>
+    <div className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-blue-500 rounded-full opacity-20 blur-3xl animate-float-reverse"></div>
+
+    {/* Diagonal line SVG */}
+    <svg
+      className="absolute top-0 left-0 w-full h-full"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path
+        d="M0 0 L100 100 L0 100 Z"
+        fill="rgba(255, 255, 255, 0.05)"
+      ></path>
+    </svg>
+  </div>
+
+  {/* Content container */}
+  <div className="max-w-3xl relative z-10">
+    {/* Heading with gradient shimmer effect */}
+    <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-shimmer transition-all duration-500 hover:tracking-wide">
+      Empowering Your Vision with <span className="text-green-400 glow">Next-Gen Web Solutions</span> 🚀
+    </h2>
+
+    {/* Description with glowing effect */}
+    <p className="text-lg sm:text-xl text-slate-300 mb-8 animate-fade-in-up">
+      At <span className="font-semibold text-white glow">Saasnext</span>, we don't just build apps — we engineer digital growth. From sleek UI/UX to advanced lead generation, we help you stand out and scale smart.
     </p>
+
+    {/* Call to Action with hover effects */}
+    <a
+      href="#contact"
+      className="inline-block relative px-8 py-4 bg-gradient-to-r from-green-500 to-blue-600 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 overflow-hidden"
+    >
+      <span className="relative z-10">🚀 Start Your Project Today</span>
+      <span className="absolute inset-0 bg-white/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
+    </a>
   </div>
 </section>
 
 
-<section className="w-full bg-[#161E42] py-16 px-6">
-  <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<section className="w-full bg-[#161E42] py-20 px-6">
+  <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
     
     {/* Left Column - Text Content */}
-    <div className="text-center lg:text-left">
-      <h2 className="text-4xl font-extrabold mb-4 text-white">Why Choose Saasnext?</h2>
-      <p className="text-lg text-gray-300">
-        We provide top-notch web development and lead generation solutions to help businesses grow, scale, and succeed online.
+    <div className="text-center lg:text-left space-y-6">
+      <h2 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight">
+        Why Choose{" "}
+        <span className="relative inline-block text-green-400">
+          Saasnext
+          <span className="absolute left-0 bottom-0 w-full h-[3px] bg-green-400 animate-underline"></span>
+        </span>
+        ?
+      </h2>
+      <p className="text-lg text-slate-300 max-w-xl">
+        We provide cutting-edge web development and lead generation solutions to help you grow, scale, and dominate your niche online. Let us turn your vision into a high-performing digital reality.
       </p>
     </div>
 
-    {/* Right Column - 2×2 Grid Layout */}
+    {/* Right Column - 2×2 Grid Layout with Cards */}
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
       {features.map((feature, index) => (
         <div
           key={index}
-          className="border-2 border-gray-500 p-6 rounded-lg text-center shadow-md transition duration-300 hover:border-orange-500"
+          className="group bg-[#1f2a4a] border border-transparent hover:border-green-400 p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300"
         >
+          {/* Placeholder for icon */}
+          <div className="flex items-center justify-center h-12 w-12 bg-green-500 rounded-full text-white mb-4 mx-auto lg:mx-0">
+            <span className="text-xl font-bold">{index + 1}</span>
+          </div>
+
           <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
-          <p className="text-gray-300">{feature.description}</p>
+          <p className="text-gray-300 text-sm">{feature.description}</p>
         </div>
       ))}
     </div>
   </div>
 </section>
+
+
+
+<section className="w-full bg-[#161E42] py-20 px-6 text-white">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+    
+    {/* Left Column - Main Heading and Description */}
+    <div className="space-y-6">
+      <h2 className="text-4xl font-extrabold text-white underline decoration-orange-400 underline-offset-4">
+        Web App Development
+      </h2>
+      <p className="text-lg leading-relaxed text-gray-300">
+        Crafting dynamic and user-centric web applications tailored to your business needs. 
+        We go beyond simple websites, creating interactive experiences that engage your users and drive results. 
+        We focus on scalability, security, and maintainability, ensuring your web application grows with your business.
+      </p>
+    </div>
+
+    {/* Right Column - Key Features */}
+    <div className="space-y-6">
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Custom Web Application Development</h3>
+        <p className="text-gray-300 mt-2">
+          Every application is built from the ground up to meet your specific requirements, workflows, and goals. 
+          This includes detailed planning, user journey mapping, and iterative development.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">E-commerce Solutions</h3>
+        <p className="text-gray-300 mt-2">
+          We build robust and secure online stores that include shopping cart development, payment gateway integration, 
+          product catalog management, and order tracking.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Progressive Web Apps (PWAs)</h3>
+        <p className="text-gray-300 mt-2">
+          PWAs load instantly, work offline, and can be installed on any device, offering the best of both web and mobile applications.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Single-Page Applications (SPAs)</h3>
+        <p className="text-gray-300 mt-2">
+          We create SPAs that provide a fast and fluid user experience by loading a single HTML page and dynamically updating content based on user interaction.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">API Development & Integration</h3>
+        <p className="text-gray-300 mt-2">
+          We design and integrate RESTful APIs for seamless data flow between systems, with a focus on reliability, documentation, and testing.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section className="w-full bg-[#161E42] py-20 px-6 text-white">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+    {/* Left Column - Key Features */}
+    <div className="space-y-6">
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Search Engine Optimization (SEO)</h3>
+        <p className="text-gray-300 mt-2">
+          We optimize your site to rank higher in search results, driving organic traffic. This includes keyword research, 
+          on-page SEO, link building, and technical optimization.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Pay-Per-Click (PPC) Advertising</h3>
+        <p className="text-gray-300 mt-2">
+          We run high-converting campaigns on platforms like Google Ads to deliver fast results. Includes ad copy, bidding, 
+          and continuous optimization.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Content Marketing</h3>
+        <p className="text-gray-300 mt-2">
+          We produce valuable content like blogs, videos, and infographics to attract, engage, and convert your audience 
+          while building brand trust.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Social Media Marketing</h3>
+        <p className="text-gray-300 mt-2">
+          We leverage both organic and paid social strategies on platforms like Facebook, Instagram, and LinkedIn to 
+          boost engagement and generate leads.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Lead Nurturing & Management</h3>
+        <p className="text-gray-300 mt-2">
+          Through email automation, CRM integration, and lead scoring, we ensure leads are nurtured until they’re 
+          sales-ready.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Column - Main Heading and Description */}
+    <div className="space-y-6 text-left lg:text-right">
+      <h2 className="text-4xl font-extrabold text-white underline decoration-orange-400 underline-offset-4">
+        Lead Generation
+      </h2>
+      <p className="text-lg leading-relaxed text-gray-300">
+        Driving targeted leads to fuel your business growth and expand your customer base. We employ a multi-faceted approach 
+        to lead generation, combining various online strategies to attract, engage, and convert potential customers. 
+        We don't just deliver leads; we deliver qualified leads that are more likely to convert into paying customers.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section className="w-full bg-[#161E42] py-20 px-6 text-white">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+    {/* Left Column - Main Heading and Description */}
+    <div className="space-y-6 text-left">
+      <h2 className="text-4xl font-extrabold text-white underline decoration-orange-400 underline-offset-4">
+        Copywriting
+      </h2>
+      <p className="text-lg leading-relaxed text-gray-300">
+        Crafting compelling and persuasive copy that resonates with your audience and drives action. We go beyond simply writing words; 
+        we craft messages that connect with your audience on an emotional level and inspire them to take the desired action. 
+        We understand the nuances of different writing styles and tailor our copy to each specific platform and purpose.
+      </p>
+    </div>
+
+    {/* Right Column - Key Features */}
+    <div className="space-y-6">
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Website Copywriting</h3>
+        <p className="text-gray-300 mt-2">
+          We write persuasive and clear website copy that communicates your value, engages visitors, and increases conversions—homepages, 
+          service pages, and CTAs.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Marketing Collateral</h3>
+        <p className="text-gray-300 mt-2">
+          Engaging content for brochures, flyers, and presentations that enhances your marketing efforts and supports your sales team.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Blog Posts & Articles</h3>
+        <p className="text-gray-300 mt-2">
+          Informative and SEO-friendly content that attracts readers, builds trust, and establishes your brand as a thought leader.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Social Media Content</h3>
+        <p className="text-gray-300 mt-2">
+          Short-form, snappy, and engaging copy tailored for different social platforms to drive engagement and shares.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Sales Copy & Scripts</h3>
+        <p className="text-gray-300 mt-2">
+          Persuasive scripts and email templates designed to help your sales team close deals faster and more effectively.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section className="w-full bg-[#161E42] py-20 px-6 text-white">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+    {/* Left Column - Key Features */}
+    <div className="space-y-6">
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Technology Roadmap Planning</h3>
+        <p className="text-gray-300 mt-2">
+          We help you create a multi-year strategy that aligns your IT initiatives with business goals and budgets for smarter growth.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">IT Strategy Development</h3>
+        <p className="text-gray-300 mt-2">
+          Define and shape your tech stack, infrastructure, and governance model to support scalable, sustainable business operations.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Process Optimization</h3>
+        <p className="text-gray-300 mt-2">
+          Streamline workflows and reduce costs by integrating the right technology into your business processes.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Change Management</h3>
+        <p className="text-gray-300 mt-2">
+          Ensure smooth transitions when introducing new systems, with a strong focus on user adoption and minimal business disruption.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Project Management</h3>
+        <p className="text-gray-300 mt-2">
+          Deliver IT projects on time and within budget with our expert planning, execution, and stakeholder communication.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Column - Heading and Description */}
+    <div className="space-y-6 text-left lg:text-right">
+      <h2 className="text-4xl font-extrabold text-white underline decoration-orange-400 underline-offset-4">
+        IT Consulting
+      </h2>
+      <p className="text-lg leading-relaxed text-gray-300">
+        Expert guidance and strategic advice to optimize your technology investments and achieve business goals. 
+        We partner with you to understand your challenges, then craft a custom tech strategy aligned with your business objectives. 
+        Our consulting is practical, honest, and results-driven.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section className="w-full bg-[#161E42] py-20 px-6 text-white">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+    {/* Left Column - Heading and Description */}
+    <div className="space-y-6 text-left lg:text-left">
+      <h2 className="text-4xl font-extrabold text-white underline decoration-orange-400 underline-offset-4">
+        Cloud Services
+      </h2>
+      <p className="text-lg leading-relaxed text-gray-300">
+        Leveraging the power of the cloud to improve scalability, flexibility, and cost-efficiency. We help you harness the cloud to transform your IT infrastructure, reduce costs, and improve agility. Our cloud services range from migration to continuous management and optimization.
+      </p>
+    </div>
+
+    {/* Right Column - Key Features */}
+    <div className="space-y-6">
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Cloud Migration</h3>
+        <p className="text-gray-300 mt-2">
+          We help you migrate your applications and data to the cloud, whether it's a public, private, or hybrid cloud environment, ensuring a smooth transition with minimal disruption.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Cloud Infrastructure Management</h3>
+        <p className="text-gray-300 mt-2">
+          We manage your cloud infrastructure, including servers, storage, and networking, ensuring optimal performance, security, and reliability.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">SaaS Solutions</h3>
+        <p className="text-gray-300 mt-2">
+          We help you select and implement the right Software-as-a-Service (SaaS) solutions for your business needs, from CRM and ERP to collaboration and productivity tools.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Cloud Security</h3>
+        <p className="text-gray-300 mt-2">
+          We implement robust security measures to protect your data and applications in the cloud, including access control, data encryption, and threat detection.
+        </p>
+      </div>
+
+      <div className="border-l-4 border-orange-500 pl-4">
+        <h3 className="text-xl font-semibold text-white">Disaster Recovery and Backup</h3>
+        <p className="text-gray-300 mt-2">
+          We develop and implement disaster recovery and backup plans to ensure your business continuity in the event of an outage or data loss.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
 
 <section className="w-full bg-[#161E42] py-16 px-6">

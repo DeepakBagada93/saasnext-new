@@ -6,12 +6,42 @@
 export default function Contact() {
   return (
     <>
-      <section className="w-full h-[600px] bg-[#161E42] flex items-center justify-center text-center px-6">
-  <div className="max-w-3xl">
-    <h2 className="text-5xl font-extrabold mb-4 text-white">Welcome to Saasnext</h2>
-    <p className="text-lg text-white">
-      At Saasnext, we specialize in web application development and lead generation, 
-      helping businesses scale with modern technology and digital solutions.
+      <section className="relative w-full h-[600px] bg-gradient-to-br from-[#161E42] to-[#0A1128] flex items-center justify-center text-center px-6 overflow-hidden">
+  {/* Background decorative elements */}
+  <div className="absolute inset-0 z-0 overflow-hidden">
+    {/* Animated gradient overlay */}
+    <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 via-blue-500/20 to-pink-500/30 animate-pulse"></div>
+
+    {/* Floating circles */}
+    <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-purple-500 rounded-full opacity-20 blur-3xl animate-float"></div>
+    <div className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-blue-500 rounded-full opacity-20 blur-3xl animate-float-reverse"></div>
+
+    {/* Diagonal line SVG */}
+    <svg
+      className="absolute top-0 left-0 w-full h-full"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path
+        d="M0 0 L100 100 L0 100 Z"
+        fill="rgba(255, 255, 255, 0.05)"
+      ></path>
+    </svg>
+  </div>
+
+  {/* Content container */}
+  <div className="max-w-3xl relative z-10">
+    {/* Heading with gradient shimmer effect */}
+    <h2 className="text-5xl sm:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-shimmer transition-all duration-500 hover:tracking-wide">
+      Welcome to Saasnext
+    </h2>
+
+    {/* Description with glowing effect */}
+    <p className="text-lg sm:text-xl text-slate-300 leading-relaxed animate-fade-in-up">
+      At <span className="font-semibold text-white glow">Saasnext</span>, we specialize in{" "}
+      <strong className="text-blue-400 glow">web application development</strong> and{" "}
+      <strong className="text-green-400 glow">lead generation</strong>, helping businesses scale with modern technology and digital solutions.
     </p>
   </div>
 </section>

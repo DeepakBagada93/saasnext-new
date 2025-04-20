@@ -189,19 +189,48 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#161E42]">
       {/* Hero Section - Adjusted spacing and vertical alignment */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center bg-[#161E42] text-white px-6 text-center overflow-hidden transition-all duration-1000">
-        <div className="mb-16 transition-all duration-500 transform scale-110">
-          {headings[currentIndex].diagram}
-        </div>
+      <section className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#161E42] to-[#0A1128] text-white px-6 text-center overflow-hidden">
+  {/* Background decorative elements */}
+  <div className="absolute inset-0 z-0 overflow-hidden">
+    {/* Animated gradient overlay */}
+    <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 via-blue-500/20 to-pink-500/30 animate-pulse"></div>
 
-        <h1 className="text-5xl md:text-7xl font-bold transition-opacity duration-500 mb-8">
-          {headings[currentIndex].text}
-        </h1>
+    {/* Floating circles */}
+    <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-purple-500 rounded-full opacity-20 blur-3xl animate-float"></div>
+    <div className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-blue-500 rounded-full opacity-20 blur-3xl animate-float-reverse"></div>
 
-        <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-          Transform your ideas into high-performing solutions and grow your business with smart strategies.
-        </p>
-      </section>
+    {/* Diagonal line SVG */}
+    <svg
+      className="absolute top-0 left-0 w-full h-full"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path
+        d="M0 0 L100 100 L0 100 Z"
+        fill="rgba(255, 255, 255, 0.05)"
+      ></path>
+    </svg>
+  </div>
+
+  {/* Content container */}
+  <div className="relative z-10">
+    {/* Diagram with scale animation */}
+    <div className="mb-16 transition-all duration-500 transform scale-110 hover:scale-125">
+      {headings[currentIndex].diagram}
+    </div>
+
+    {/* Heading with gradient shimmer effect */}
+    <h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-shimmer transition-opacity duration-500 mb-8">
+      {headings[currentIndex].text}
+    </h1>
+
+    {/* Description with glowing effect */}
+    <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed animate-fade-in-up">
+      Transform your ideas into high-performing solutions and grow your business with smart strategies.
+    </p>
+  </div>
+</section>
 
       {/* Introduction Section - Consistent spacing */}
 <section className="container mx-auto bg-[#161E42] text-white px-8 py-28">

@@ -24,22 +24,56 @@ export default function AboutUs() {
     <>
 
 
-       <section className="relative w-full bg-[#161E42] text-white h-[600px] flex items-center justify-center px-6">
-  <div className="container mx-auto text-center max-w-3xl">
-    {/* Heading */}
-    <h1 className="text-5xl font-extrabold mb-6">About Saasnext</h1>
+<section className="relative w-full bg-gradient-to-br from-[#161E42] to-[#0A1128] text-white overflow-hidden h-screen flex items-center justify-center px-6">
+  {/* Background decorative elements */}
+  <div className="absolute inset-0 z-0 overflow-hidden">
+    {/* Animated gradient overlay */}
+    <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 via-blue-500/20 to-pink-500/30 animate-pulse"></div>
 
-    {/* Description */}
-    <p className="text-lg leading-relaxed">
-      Saasnext is a top-tier <strong>Web App Development</strong> and <strong>Lead Generation</strong> company, 
-      dedicated to building high-performance, scalable digital solutions. We empower businesses 
-      to <strong>grow, manage, and automate</strong> their digital presence using innovative technology.
+    {/* Floating circles */}
+    <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-purple-500 rounded-full opacity-20 blur-3xl animate-float"></div>
+    <div className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-blue-500 rounded-full opacity-20 blur-3xl animate-float-reverse"></div>
+
+    {/* Diagonal line SVG */}
+    <svg
+      className="absolute top-0 left-0 w-full h-full"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path
+        d="M0 0 L100 100 L0 100 Z"
+        fill="rgba(255, 255, 255, 0.05)"
+      ></path>
+    </svg>
+  </div>
+
+  {/* Content container */}
+  <div className="container mx-auto text-center max-w-4xl relative z-10">
+    {/* Heading with gradient and animation */}
+    <h1 className="text-6xl md:text-7xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 animate-shimmer">
+      About Saasnext
+    </h1>
+
+    {/* Description with glowing effect */}
+    <p className="text-lg md:text-xl leading-relaxed text-gray-300 animate-fade-in-up">
+      Saasnext is a top-tier{" "}
+      <strong className="text-blue-400 glow">Web App Development</strong> and{" "}
+      <strong className="text-green-400 glow">Lead Generation</strong> company,
+      dedicated to building high-performance, scalable digital solutions. We
+      empower businesses to{" "}
+      <strong className="text-yellow-400 glow">grow, manage, and automate</strong>{" "}
+      their digital presence using innovative technology.
     </p>
 
-    {/* Call to Action */}
-    <div className="mt-8">
-      <a href="/contact" className="bg-orange-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-orange-600 transition">
-        Get in Touch
+    {/* Call to Action with 3D hover effect */}
+    <div className="mt-10 animate-fade-in-up">
+      <a
+        href="/contact"
+        className="inline-block relative bg-gradient-to-r from-orange-500 to-pink-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 hover:scale-105 overflow-hidden"
+      >
+        <span className="relative z-10">Get in Touch</span>
+        <span className="absolute inset-0 bg-white/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
       </a>
     </div>
   </div>
