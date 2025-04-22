@@ -77,9 +77,12 @@ export default SaasnextApp;`;
   }, []);
 
   return (
-    <div className="bg-[#161E42] text-white flex flex-col items-center justify-center min-h-screen px-4 py-10">
+    <div className="bg-[#161E42] text-white flex flex-col items-center justify-center min-h-screen px-4 py-10 relative overflow-hidden">
+      {/* Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 opacity-50 z-0"></div>
+
       {/* Main Content */}
-      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
+      <div className="relative z-10 max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
         {/* Code Display Section */}
         <div className="relative bg-slate-800 text-slate-50 p-6 rounded-xl shadow-md font-mono text-sm leading-6 overflow-x-auto whitespace-pre-wrap border border-slate-700">
           <div
@@ -93,7 +96,7 @@ export default SaasnextApp;`;
           <img
             src="/images/saasnext-solutions.jpg"
             alt="Responsive Web App"
-            className="rounded-xl shadow-md max-w-full h-auto object-cover"
+            className="rounded-xl shadow-md max-w-full h-auto object-cover transition-transform duration-300 hover:scale-105"
             onError={(e) => {
               e.target.src = '/images/fallback-image.jpg'; // Fallback image
             }}
@@ -111,6 +114,16 @@ export default SaasnextApp;`;
           <p><strong>Subject:</strong> {subject}</p>
           <p className="mt-2"><strong>Description:</strong> {description}</p>
         </div>
+      )}
+
+      {/* Button to Trigger Email Preview */}
+      {!showEmail && (
+        <button
+          onClick={() => setShowEmail(true)}
+          className="mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          Show Email Preview
+        </button>
       )}
 
       {/* CSS Animations */}

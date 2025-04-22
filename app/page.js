@@ -3,7 +3,7 @@
 
 import ContactForm from './components/ContactForm';
 import AnimatedServices from './components/AnimatedServices';
-import ReactCodeDisplay from './components/ReactCodeDisplay';
+
 
 import { useState, useEffect } from "react";
 
@@ -394,37 +394,136 @@ export default function Home() {
 
 <section className="container mx-auto px-6 py-20 bg-[#161E42] text-white">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
     {/* Left Side - Title and Description */}
     <div className="md:pr-12">
-      <h2 className="text-4xl font-extrabold mb-4 leading-snug tracking-tight">
-        Why Choose <span className="text-orange-500">Saasnext?</span>
+      <h2 className="text-4xl font-extrabold mb-6 leading-snug tracking-tight">
+        Why Choose <span className="text-orange-500">SaaSNext?</span>
       </h2>
-      <p className="text-lg text-gray-300 leading-relaxed">
-      We have a proven track record of delivering high-quality web applications across a wide range of industries. Our team comprises seasoned professionals with deep expertise in the latest web technologies. As a leading webapp development company in Junagadh, we understand the local market dynamics and combine them with global best practices to provide cutting-edge solutions.
-
-
+      <h3 className="text-xl text-orange-400 mb-4">
+        Solving Business Challenges with Technology & AI
+      </h3>
+      <p className="text-lg text-gray-300 leading-relaxed mb-6">
+        At SaaSNext, we blend technical expertise, data-driven marketing, and AI innovation to deliver transformative results. Here's why businesses worldwide trust us:
       </p>
+      <div className="mt-6">
+        <div className="inline-flex items-center gap-4 mb-4">
+          <span className="text-3xl">🌟</span>
+          <span className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent">
+            100+ Successful Projects
+          </span>
+        </div>
+        <p className="text-gray-300">
+          Your go-to partner for web app development in Junagadh, lead generation, and AI solutions.
+        </p>
+      </div>
     </div>
 
-    {/* Right Side - Cards */}
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
-      {points.map((point, index) => (
+    {/* Right Side - Enhanced Cards */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      {[
+        {
+          title: "Tailored Solutions",
+          desc: "Custom web apps and AI agents built to address your unique business needs.",
+          icon: "💡"
+        },
+        {
+          title: "High-Impact Lead Generation",
+          desc: "Data-driven strategies to attract leads that convert.",
+          icon: "📈"
+        },
+        {
+          title: "AI-Powered Efficiency",
+          desc: "Leverage our AI agents to automate processes, saving time and costs.",
+          icon: "🤖"
+        },
+        {
+          title: "Scalable Growth",
+          desc: "Solutions that evolve with your business, from local startups in Junagadh to global enterprises.",
+          icon: "🚀"
+        },
+        {
+          title: "Expert Team",
+          desc: "Our developers, marketers, and AI specialists deliver measurable ROI.",
+          icon: "👥"
+        },
+        {
+          title: "Local Expertise, Global Reach",
+          desc: "Proudly based in Junagadh, serving clients worldwide with a personal touch.",
+          icon: "🌍"
+        }
+      ].map((item, index) => (
         <div
           key={index}
-          className="group bg-[#1f2a55] p-6 rounded-2xl flex flex-col items-center justify-center text-center 
-                     border border-transparent hover:border-orange-500 hover:shadow-lg transition-all duration-300"
+          className="group bg-[#1f2a55] p-6 rounded-2xl flex flex-col items-start
+                     border border-transparent hover:border-orange-500 
+                     hover:shadow-lg transition-all duration-300
+                     hover:bg-[#252f63]"
         >
-          <div className="text-3xl font-bold text-orange-500 mb-2 group-hover:scale-110 transition-transform duration-300">
-            {index + 1}
-          </div>
-          <p className="text-sm font-medium text-gray-300">{point}</p>
+          <div className="text-3xl mb-3">{item.icon}</div>
+          <h3 className="text-lg font-semibold text-orange-400 mb-2">{item.title}</h3>
+          <p className="text-sm text-gray-300 leading-relaxed">{item.desc}</p>
         </div>
       ))}
     </div>
-
   </div>
 </section>
+<section className="bg-[#161E42] text-white py-20 px-6">
+  <div className="max-w-7xl mx-auto text-center mb-12">
+    <h2 className="text-4xl font-extrabold underline decoration-orange-400 underline-offset-4">
+      The Power of AI: Why It’s a Game-Changer for Your Business
+    </h2>
+    <p className="text-lg text-gray-300 mt-4 max-w-3xl mx-auto">
+      Artificial Intelligence (AI) is revolutionizing how businesses operate, and <span className="underline decoration-orange-400">SaaSNext</span> is at the forefront of this transformation. Our AI agents are custom-built to solve your business challenges and drive growth.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto text-left">
+    {/* Feature 1 */}
+    <div className="border-l-4 border-orange-500 pl-6">
+      <h3 className="text-xl font-semibold mb-2">🚀 Automation</h3>
+      <p className="text-gray-300">
+        Streamline repetitive tasks like data entry, scheduling, and customer support, saving up to 40% of operational time.
+      </p>
+    </div>
+
+    {/* Feature 2 */}
+    <div className="border-l-4 border-orange-500 pl-6">
+      <h3 className="text-xl font-semibold mb-2">💬 Enhanced Customer Experience</h3>
+      <p className="text-gray-300">
+        Deliver 24/7 personalized support with AI chatbots that handle inquiries instantly.
+      </p>
+    </div>
+
+    {/* Feature 3 */}
+    <div className="border-l-4 border-orange-500 pl-6">
+      <h3 className="text-xl font-semibold mb-2">📊 Data Insights</h3>
+      <p className="text-gray-300">
+        Analyze customer behavior and market trends to make smarter decisions.
+      </p>
+    </div>
+
+    {/* Feature 4 */}
+    <div className="border-l-4 border-orange-500 pl-6">
+      <h3 className="text-xl font-semibold mb-2">💰 Cost Efficiency</h3>
+      <p className="text-gray-300">
+        Reduce overhead costs by automating manual processes without sacrificing quality.
+      </p>
+    </div>
+
+    {/* Feature 5 */}
+    <div className="border-l-4 border-orange-500 pl-6">
+      <h3 className="text-xl font-semibold mb-2">📈 Scalability</h3>
+      <p className="text-gray-300">
+        AI solutions that grow with your business, handling increased workloads effortlessly.
+      </p>
+    </div>
+  </div>
+
+  <div className="max-w-4xl mx-auto mt-12 text-center text-gray-300 text-lg">
+    From small businesses to large enterprises, our AI agents provide seamless integration with your existing systems, ensuring maximum impact with minimal disruption.
+  </div>
+</section>
+
 
       <AnimatedServices/>
 
@@ -624,7 +723,7 @@ export default function Home() {
         </div>
       </section>
 
-      <ReactCodeDisplay/>          
+      
       <ContactForm />
     
       <section className="container mx-auto px-6 py-12 bg-[#161E42] text-white">
@@ -662,87 +761,36 @@ export default function Home() {
         </div>
       </div>
 
-
-
-      <section className="bg-gradient-to-br from-[#161E42] to-[#1F2A56] text-white py-32 relative overflow-hidden">
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute inset-0" style={{
-              backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zM22.344 0L13.858 8.485 15.272 9.9l7.9-7.9h-.828zm5.656 0L19.515 8.485 17.343 10.657l7.9-7.9h2.757zm5.656 0l-6.485 6.485L25.515 8.828 31.9.928h1.757zm5.656 0l-4.242 4.242L33.414 6.586l3.535-3.535h2.122zM2.828 0v2.828l1.414 1.414.829-.828L2.828 0zm5.656 0v1.414l2.243 2.243L9.313 2.243 8.485 0zm5.657 0v.414l3.243 3.243 1.414-1.414L14.142 0zm5.657 0l1.414 1.414 1.414-1.414h-2.828zm5.657 0l2.828 2.828 1.414-1.414L20.485 0zm5.657 0l4.242 4.242 1.414-1.414L26.142 0zm5.656 0l5.657 5.657 1.414-1.414L31.8 0zm5.657 0l7.07 7.07 1.415-1.414L37.456 0zM0 2.828l5.657 5.657L7.07 7.07 1.414 1.414 0 2.828zm0 5.657L7.07 15.556 8.485 14.14 2.828 8.485 0 8.485zm0 5.657l9.192 9.192 1.415-1.414-8.485-8.485L0 14.142zm0 5.657L11.314 30.97l1.414-1.414-9.9-9.9L0 19.8zm0 5.657l13.435 13.435 1.414-1.414-11.313-11.313L0 25.456zm0 5.657L15.556 47.07l1.414-1.414-13.435-13.435L0 31.113zm0 5.657l17.678 17.678 1.414-1.414-15.556-15.556L0 36.77zm0 5.657l19.799 19.8 1.414-1.415L1.414 40.97 0 42.426z" fill="%23ffffff" fill-opacity="1" fill-rule="evenodd"/%3E%3C/svg%3E")',
-          }} />
-        </div>
-
-        <div className="container mx-auto px-6 relative">
-          {/* Main Content */}
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block px-6 py-2 bg-orange-500/10 rounded-full text-orange-400 text-sm font-semibold mb-6">
-              🚀 Transform Your Business Today
-            </div>
-            
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Ready to Transform Your Digital Presence?
-            </h2>
-
-            <div className="space-y-6 mb-12">
-              <p className="text-xl text-gray-300 leading-relaxed">
-                At SaaSnext, we're passionate about helping businesses like yours
-                thrive in the digital age. Whether you're looking to build a
-                cutting-edge web application, boost your online visibility, or
-                streamline your operations, our team of experts is ready to turn
-                your vision into reality.
-              </p>
-              
-              <p className="text-xl text-gray-300 leading-relaxed">
-                We understand that every business is unique, and that's why we take
-                a personalized approach to every project. From initial concept to
-                final launch and beyond, we'll be with you every step of the way.
-              </p>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href="#contact"
-                className="group px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl text-white font-semibold 
-                         shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 transition-all duration-300 
-                         transform hover:-translate-y-1 w-full sm:w-auto"
-              >
-                <span className="flex items-center justify-center gap-2">
-                  Contact Us Today
-                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </span>
-              </a>
-              
-              <a
-                href="#services"
-                className="group px-8 py-4 border-2 border-orange-500 rounded-xl text-orange-400 font-semibold
-                         hover:bg-orange-500 hover:text-white transition-all duration-300
-                         transform hover:-translate-y-1 w-full sm:w-auto"
-              >
-                <span className="flex items-center justify-center gap-2">
-                  View Our Services
-                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      {/* Divider */}
-      <div className="bg-[#161E42] py-8">
-        <div className="container mx-auto px-6">
-          <hr className="border-t-2 border-gray-700" />
-        </div>
+      <section className="bg-gradient-to-r from-[#161E42] to-[#1f2a60] text-white py-20 px-6">
+  <div className="max-w-4xl mx-auto text-center">
+    <h2 className="text-4xl font-bold underline decoration-orange-400 underline-offset-4 mb-4">
+      Ready to Transform Your Business?
+    </h2>
+    <p className="text-lg text-gray-300 mb-8">
+      Partner with <span className="font-semibold text-orange-400">SaaSNext</span> to unlock your business’s potential. Whether you need a powerful web app, high-quality leads, or AI agents to automate your operations — we’re here to deliver results.
+    </p>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left text-gray-300 max-w-3xl mx-auto mb-10">
+      <div className="border-l-4 border-orange-500 pl-4">
+        <p>🧑‍💻 <strong className="text-white">Build a web app</strong> that streamlines your business.</p>
       </div>
+      <div className="border-l-4 border-orange-500 pl-4">
+        <p>🎯 <strong className="text-white">Attract leads</strong> that convert into loyal customers.</p>
+      </div>
+      <div className="border-l-4 border-orange-500 pl-4">
+        <p>🤖 <strong className="text-white">Automate tasks</strong> with AI agents tailored to your needs.</p>
+      </div>
+      <div className="border-l-4 border-orange-500 pl-4">
+        <p>📈 <strong className="text-white">Achieve sustainable growth</strong> with scalable solutions.</p>
+      </div>
+    </div>
 
+    <button className="mt-4 px-8 py-3 bg-orange-500 hover:bg-orange-600 transition-all rounded-xl text-white text-lg font-semibold shadow-lg">
+      Lets Get Started
+    </button>
+  </div>
+</section>
 
-
+      
     
 
      
