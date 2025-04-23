@@ -42,7 +42,7 @@ export default function Services() {
 
     {/* Description with glowing effect */}
     <p className="text-lg sm:text-xl text-slate-300 mb-8 animate-fade-in-up">
-      At <span className="font-semibold text-white glow">Saasnext</span>, we don't just build apps — we engineer digital growth. From sleek UI/UX to advanced lead generation, we help you stand out and scale smart.
+      At <span className="font-semibold text-white glow">Saasnext</span>, we don't just build apps — we engineer digital growth. As a trusted <strong className="text-blue-400 glow">web application development company in Junagadh</strong>, we deliver <strong className="text-purple-400 glow">custom SaaS development services</strong> and advanced <strong className="text-green-400 glow">lead generation services for SaaS</strong>. From sleek UI/UX to scalable solutions, we help you stand out and scale smart.
     </p>
 
     {/* Call to Action with hover effects */}
@@ -71,13 +71,34 @@ export default function Services() {
         ?
       </h2>
       <p className="text-lg text-slate-300 max-w-xl">
-        We provide cutting-edge web development and lead generation solutions to help you grow, scale, and dominate your niche online. Let us turn your vision into a high-performing digital reality.
+        As a trusted <strong className="text-green-400">web application development company in Junagadh</strong>, we provide cutting-edge web development and <strong className="text-green-400">lead generation services for SaaS</strong> to help you grow, scale, and dominate your niche online. Let us turn your vision into a high-performing digital reality with our expertise in <strong className="text-green-400">custom SaaS development services</strong> and <strong className="text-green-400">AI agent development services</strong>.
       </p>
     </div>
 
     {/* Right Column - 2×2 Grid Layout with Cards */}
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      {features.map((feature, index) => (
+      {[
+        {
+          title: "Custom Web Development",
+          description:
+            "As a leading <strong className='text-green-400'>web development company in Junagadh</strong>, we build tailored solutions that align with your business goals.",
+        },
+        {
+          title: "AI-Powered Solutions",
+          description:
+            "Leverage our expertise as an <strong className='text-green-400'>AI development company</strong> to automate tasks and enhance productivity.",
+        },
+        {
+          title: "Lead Generation Services",
+          description:
+            "Our <strong className='text-green-400'>lead generation company in Junagadh</strong> delivers high-quality leads to fuel your growth.",
+        },
+        {
+          title: "Scalable SaaS Platforms",
+          description:
+            "We specialize in <strong className='text-green-400'>custom SaaS development services</strong>, ensuring scalability and future-ready solutions.",
+        },
+      ].map((feature, index) => (
         <div
           key={index}
           className="group bg-[#1f2a4a] border border-transparent hover:border-green-400 p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300"
@@ -88,7 +109,10 @@ export default function Services() {
           </div>
 
           <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
-          <p className="text-gray-300 text-sm">{feature.description}</p>
+          <p
+            className="text-gray-300 text-sm"
+            dangerouslySetInnerHTML={{ __html: feature.description }}
+          />
         </div>
       ))}
     </div>
@@ -107,7 +131,7 @@ export default function Services() {
       </h2>
       <p className="text-lg leading-relaxed text-gray-300">
         Crafting dynamic and user-centric web applications tailored to your business needs. 
-        We go beyond simple websites, creating interactive experiences that engage your users and drive results. 
+        As a trusted <strong className="text-orange-400">web application development company in Junagadh</strong>, we go beyond simple websites, creating interactive experiences that engage your users and drive results. 
         We focus on scalability, security, and maintainability, ensuring your web application grows with your business.
       </p>
     </div>
@@ -118,7 +142,7 @@ export default function Services() {
         <h3 className="text-xl font-semibold text-white">Custom Web Application Development</h3>
         <p className="text-gray-300 mt-2">
           Every application is built from the ground up to meet your specific requirements, workflows, and goals. 
-          This includes detailed planning, user journey mapping, and iterative development.
+          As a leading <strong className="text-orange-400">custom SaaS development services</strong> provider, this includes detailed planning, user journey mapping, and iterative development.
         </p>
       </div>
 
@@ -126,35 +150,37 @@ export default function Services() {
         <h3 className="text-xl font-semibold text-white">E-commerce Solutions</h3>
         <p className="text-gray-300 mt-2">
           We build robust and secure online stores that include shopping cart development, payment gateway integration, 
-          product catalog management, and order tracking.
+          product catalog management, and order tracking. Partner with us as your trusted <strong className="text-orange-400">SaaS development company</strong>.
         </p>
       </div>
 
       <div className="border-l-4 border-orange-500 pl-4">
         <h3 className="text-xl font-semibold text-white">Progressive Web Apps (PWAs)</h3>
         <p className="text-gray-300 mt-2">
-          PWAs load instantly, work offline, and can be installed on any device, offering the best of both web and mobile applications.
+          PWAs load instantly, work offline, and can be installed on any device, offering the best of both web and mobile applications. 
+          Our expertise as an <strong className="text-orange-400">AI solutions provider in Junagadh</strong> ensures cutting-edge technology integration.
         </p>
       </div>
 
       <div className="border-l-4 border-orange-500 pl-4">
         <h3 className="text-xl font-semibold text-white">Single-Page Applications (SPAs)</h3>
         <p className="text-gray-300 mt-2">
-          We create SPAs that provide a fast and fluid user experience by loading a single HTML page and dynamically updating content based on user interaction.
+          We create SPAs that provide a fast and fluid user experience by loading a single HTML page and dynamically updating content based on user interaction. 
+          Our team leverages advanced frameworks as a top <strong className="text-orange-400">web development company in Junagadh</strong>.
         </p>
       </div>
 
       <div className="border-l-4 border-orange-500 pl-4">
         <h3 className="text-xl font-semibold text-white">API Development & Integration</h3>
         <p className="text-gray-300 mt-2">
-          We design and integrate RESTful APIs for seamless data flow between systems, with a focus on reliability, documentation, and testing.
+          We design and integrate RESTful APIs for seamless data flow between systems, with a focus on reliability, documentation, and testing. 
+          As a trusted <strong className="text-orange-400">lead generation company in Junagadh</strong>, we ensure API integrations align with your business goals.
         </p>
       </div>
     </div>
 
   </div>
 </section>
-
 <section className="w-full bg-[#161E42] py-20 px-6 text-white">
   <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
 
@@ -385,60 +411,79 @@ export default function Services() {
 
 
 
-<section className="w-full bg-[#161E42] py-16 px-6">
-  <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<section className="w-full bg-gradient-to-br from-[#161E42] to-[#0A1128] py-20 px-6 relative overflow-hidden">
+  {/* Background decorative elements */}
+  <div className="absolute inset-0 z-0 overflow-hidden">
+    {/* Floating circles */}
+    <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-purple-500 rounded-full opacity-20 blur-3xl animate-float"></div>
+    <div className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-blue-500 rounded-full opacity-20 blur-3xl animate-float-reverse"></div>
+  </div>
+
+  <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
     
-    {/* Left Column - Image */}
-    <div className="flex justify-center">
+    {/* Left Column - Image with Gradient Overlay */}
+    <div className="flex justify-center relative">
       <img 
         src="/images/saasnext2.jpg" 
         alt="Business Growth" 
         className="w-full max-w-md rounded-lg shadow-lg"
       />
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#161E42]/70 to-transparent rounded-lg"></div>
+      {/* Text overlay */}
+      <p className="absolute bottom-4 left-4 text-white text-lg font-semibold bg-[#161E42]/80 px-4 py-2 rounded-lg">
+        Empowering Businesses in Junagadh and Beyond 🚀
+      </p>
     </div>
 
-    {/* Right Column - Text Content */}
+    {/* Right Column - Text Content with Enhanced Layout */}
     <div>
-      <h2 className="text-4xl font-extrabold text-white mb-4">
-        Why Choose Saasnext?
+      <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-6">
+        Why Choose <span className="text-orange-400">Saasnext?</span>
       </h2>
-      <p className="text-lg text-gray-300 mb-6">
-        Saasnext empowers businesses with cutting-edge web solutions. Our expertise ensures seamless development and lead generation.
+      <p className="text-lg text-gray-300 mb-8">
+        Saasnext empowers businesses with cutting-edge web solutions. As a trusted <strong className="text-orange-400">web application development company in Junagadh</strong>, our expertise ensures seamless development, <strong className="text-orange-400">lead generation services for SaaS</strong>, and innovative <strong className="text-orange-400">AI agent development services</strong>.
       </p>
+      
+      {/* Enhanced List with Hover Effects */}
       <ul className="space-y-4">
-        <li className="flex items-center text-lg text-gray-300">
-          <svg className="w-6 h-6 text-orange-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-6.364 6.364a1 1 0 01-1.414 0L7.293 10.95a1 1 0 011.414-1.414l1.636 1.636 5.657-5.657a1 1 0 011.414 0z" clipRule="evenodd"/>
-          </svg>
-          Scalable & High-Performance Applications
-        </li>
-        <li className="flex items-center text-lg text-gray-300">
-          <svg className="w-6 h-6 text-orange-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-6.364 6.364a1 1 0 01-1.414 0L7.293 10.95a1 1 0 011.414-1.414l1.636 1.636 5.657-5.657a1 1 0 011.414 0z" clipRule="evenodd"/>
-          </svg>
-          Optimized for Business Growth
-        </li>
-        <li className="flex items-center text-lg text-gray-300">
-          <svg className="w-6 h-6 text-orange-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-6.364 6.364a1 1 0 01-1.414 0L7.293 10.95a1 1 0 011.414-1.414l1.636 1.636 5.657-5.657a1 1 0 011.414 0z" clipRule="evenodd"/>
-          </svg>
-          Secure & Reliable Digital Solutions
-        </li>
-        <li className="flex items-center text-lg text-gray-300">
-          <svg className="w-6 h-6 text-orange-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-6.364 6.364a1 1 0 01-1.414 0L7.293 10.95a1 1 0 011.414-1.414l1.636 1.636 5.657-5.657a1 1 0 011.414 0z" clipRule="evenodd"/>
-          </svg>
-          AI & Automation Integration
-        </li>
-        <li className="flex items-center text-lg text-gray-300">
-          <svg className="w-6 h-6 text-orange-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-6.364 6.364a1 1 0 01-1.414 0L7.293 10.95a1 1 0 011.414-1.414l1.636 1.636 5.657-5.657a1 1 0 011.414 0z" clipRule="evenodd"/>
-          </svg>
-          Data-Driven Lead Generation
-        </li>
+        {[
+          {
+            title: "Scalable & High-Performance Applications",
+            desc: "We build robust applications tailored to your business needs as a leading <strong className='text-orange-400'>custom SaaS development services</strong> provider."
+          },
+          {
+            title: "Optimized for Business Growth",
+            desc: "Our strategies ensure your business scales efficiently with <strong className='text-orange-400'>data-driven lead generation services</strong>."
+          },
+          {
+            title: "Secure & Reliable Digital Solutions",
+            desc: "As a trusted <strong className='text-orange-400'>web development company in Junagadh</strong>, we prioritize security and reliability."
+          },
+          {
+            title: "AI & Automation Integration",
+            desc: "Leverage our expertise as an <strong className='text-orange-400'>AI solutions provider in Junagadh</strong> to automate processes and enhance productivity."
+          },
+          {
+            title: "Data-Driven Lead Generation",
+            desc: "Our <strong className='text-orange-400'>SaaS lead generation agency</strong> delivers high-quality leads to fuel your growth."
+          }
+        ].map((item, index) => (
+          <li
+            key={index}
+            className="flex items-center space-x-4 p-4 bg-[#1F2A55] rounded-lg shadow-md transition-all duration-300 hover:bg-[#2B3765] hover:shadow-lg"
+          >
+            <svg className="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-6.364 6.364a1 1 0 01-1.414 0L7.293 10.95a1 1 0 011.414-1.414l1.636 1.636 5.657-5.657a1 1 0 011.414 0z" clipRule="evenodd"/>
+            </svg>
+            <div>
+              <h3 className="text-lg font-semibold text-white">{item.title}</h3>
+              <p className="text-sm text-gray-300" dangerouslySetInnerHTML={{ __html: item.desc }} />
+            </div>
+          </li>
+        ))}
       </ul>
     </div>
-
   </div>
 </section>
 
@@ -575,39 +620,39 @@ export default function Services() {
 
     {/* Call to Action Section */}
     <section className="w-full bg-gradient-to-r from-[#161E42] via-[#1F2A56] to-[#161E42] py-20 px-6">
-      <div className="container mx-auto">
-        <div className="bg-[#2B3765] rounded-3xl p-12 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10 bg-pattern"></div>
-          <div className="relative z-10 max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-white">
-              Ready to Transform Your Business?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8">
-              Let's discuss how we can help you achieve your business goals with our custom web solutions.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#contact"
-                className="px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl
-                     text-white font-semibold shadow-lg shadow-orange-500/20
-                     hover:shadow-orange-500/40 transition-all duration-300
-                     transform hover:-translate-y-1"
-              >
-                Schedule a Free Consultation
-              </a>
-              <a
-                href="#portfolio"
-                className="px-8 py-4 border-2 border-orange-500 rounded-xl text-orange-400
-                     font-semibold hover:bg-orange-500 hover:text-white
-                     transition-all duration-300 transform hover:-translate-y-1"
-              >
-                View Our Portfolio
-              </a>
-            </div>
-          </div>
+  <div className="container mx-auto">
+    <div className="bg-[#2B3765] rounded-3xl p-12 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-10 bg-pattern"></div>
+      <div className="relative z-10 max-w-3xl mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-white">
+          Ready to Transform Your Business with <strong className="text-orange-400">Web App Development</strong>?
+        </h2>
+        <p className="text-xl text-gray-300 mb-8">
+          Let's discuss how we can help you achieve your business goals with our <strong className="text-orange-400">custom SaaS development services</strong>, <strong className="text-orange-400">lead generation services for SaaS</strong>, and innovative <strong className="text-orange-400">AI agent development services</strong>.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#contact"
+            className="px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl
+                 text-white font-semibold shadow-lg shadow-orange-500/20
+                 hover:shadow-orange-500/40 transition-all duration-300
+                 transform hover:-translate-y-1"
+          >
+            Schedule a Free Consultation
+          </a>
+          <a
+            href="#portfolio"
+            className="px-8 py-4 border-2 border-orange-500 rounded-xl text-orange-400
+                 font-semibold hover:bg-orange-500 hover:text-white
+                 transition-all duration-300 transform hover:-translate-y-1"
+          >
+            View Our Portfolio
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     
     </>
