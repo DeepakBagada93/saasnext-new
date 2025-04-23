@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Using saasnexticon.jpg as the site icon */}
-        <link rel="icon" href="/saasnexticon.jpg" type="image/jpeg" />
+        <link rel="icon" href="/saasicon.png" type="image/jpeg" />
       </head>
       <body className="bg-white text-black">
         <Navbar />

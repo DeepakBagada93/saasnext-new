@@ -55,12 +55,12 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="relative group">
               <Image
-                src="/newsaasnext.png"
+                src="/logo2.png"
                 alt="SaaSNext Logo"
-                width={160}
+                width={200}
                 height={50}
                 priority
-                className="h-10 w-auto md:h-12 transition-transform duration-300 group-hover:scale-105"
+                className="w-[200px] h-auto md:w-[250px] transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
 
