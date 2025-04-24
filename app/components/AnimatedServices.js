@@ -1,33 +1,33 @@
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 const hooks = [
-  '🚀 Unlock Growth with <b>Custom Web Apps</b>',
-  '🎯 Targeted Leads for <b>Real Estate Pros</b>',
-  '🔒 HIPAA-Compliant <b>Healthcare Portals</b>',
-  '📈 Enterprise Solutions That <b>Scale</b>',
-  '💡 Transforming Businesses <b>Digitally</b>',
-  '🌐 Your Vision, Built for the <b>Web</b>',
-  '📊 Data-Driven <b>Lead Generation</b>',
-  '🛠️ Innovative Apps for <b>Modern Problems</b>',
-  '🔥 Web Solutions That <b>Convert</b>',
+  "🚀 Unlock Growth with <b>Custom Web Apps</b>",
+  "🎯 Targeted Leads for <b>Real Estate Pros</b>",
+  "🔒 HIPAA-Compliant <b>Healthcare Portals</b>",
+  "📈 Enterprise Solutions That <b>Scale</b>",
+  "💡 Transforming Businesses <b>Digitally</b>",
+  "🌐 Your Vision, Built for the <b>Web</b>",
+  "📊 Data-Driven <b>Lead Generation</b>",
+  "🛠️ Innovative Apps for <b>Modern Problems</b>",
+  "🔥 Web Solutions That <b>Convert</b>",
 ];
 
 const services = [
-  { name: 'Next.js', gradient: 'bg-gradient-to-br from-gray-600 to-black' },
-  { name: 'React', gradient: 'bg-gradient-to-r from-sky-400 to-blue-600' },
-  { name: 'Laravel', gradient: 'bg-gradient-to-br from-orange-500 to-red-600' },
-  { name: 'Nest.js', gradient: 'bg-gradient-to-r from-red-600 to-rose-900' },
-  { name: 'Angular', gradient: 'bg-gradient-to-br from-red-500 to-red-800' },
-  { name: 'Vue.js', gradient: 'bg-gradient-to-r from-emerald-400 to-teal-700' },
+  { name: "Next.js", gradient: "bg-gradient-to-br from-gray-600 to-black" },
+  { name: "React", gradient: "bg-gradient-to-r from-sky-400 to-blue-600" },
+  { name: "Laravel", gradient: "bg-gradient-to-br from-orange-500 to-red-600" },
+  { name: "Nest.js", gradient: "bg-gradient-to-r from-red-600 to-rose-900" },
+  { name: "Angular", gradient: "bg-gradient-to-br from-red-500 to-red-800" },
+  { name: "Vue.js", gradient: "bg-gradient-to-r from-emerald-400 to-teal-700" },
 ];
 
 const ads = [
-  { name: 'Google Ads', gradient: 'bg-gradient-to-br from-yellow-400 to-red-600' },
-  { name: 'Meta Ads', gradient: 'bg-gradient-to-br from-blue-500 to-indigo-700' },
-  { name: 'X Ads', gradient: 'bg-gradient-to-br from-cyan-400 to-blue-600' },
-  { name: 'Amazon Ads', gradient: 'bg-gradient-to-br from-orange-400 to-yellow-600' },
+  { name: "Google Ads", gradient: "bg-gradient-to-br from-yellow-400 to-red-600" },
+  { name: "Meta Ads", gradient: "bg-gradient-to-br from-blue-500 to-indigo-700" },
+  { name: "X Ads", gradient: "bg-gradient-to-br from-cyan-400 to-blue-600" },
+  { name: "Amazon Ads", gradient: "bg-gradient-to-br from-orange-400 to-yellow-600" },
 ];
 
 export default function AnimatedServices() {
@@ -44,19 +44,19 @@ export default function AnimatedServices() {
   }, []);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    if (typeof window === "undefined") return;
 
     let animationFrame;
     const container = containerRef.current;
     const containerRect = container.getBoundingClientRect();
-    const items = container.querySelectorAll('.service-item');
+    const items = container.querySelectorAll(".service-item");
 
-    // Neural Network Animation with optimized performance
-    const canvas = document.createElement('canvas');
-    canvas.style.opacity = '0';
-    canvas.style.transition = 'opacity 0.5s ease-in';
+    // Neural Network Animation
+    const canvas = document.createElement("canvas");
+    canvas.style.opacity = "0";
+    canvas.style.transition = "opacity 0.5s ease-in";
     container.appendChild(canvas);
-    const ctx = canvas.getContext('2d', { alpha: true });
+    const ctx = canvas.getContext("2d", { alpha: true });
 
     canvas.width = containerRect.width;
     canvas.height = containerRect.height;
@@ -72,7 +72,7 @@ export default function AnimatedServices() {
     const drawNeuralNetwork = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Batch drawing for better performance
+      // Draw connections between nodes
       ctx.beginPath();
       for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
@@ -90,7 +90,7 @@ export default function AnimatedServices() {
       }
       ctx.stroke();
 
-      // Batch node drawing
+      // Draw nodes
       ctx.fillStyle = `rgba(255, 255, 255, 0.8)`;
       nodes.forEach((node) => {
         node.x += node.speedX;
@@ -107,7 +107,7 @@ export default function AnimatedServices() {
       animationFrame = requestAnimationFrame(drawNeuralNetwork);
     };
 
-    // Optimize service item positioning
+    // Position service items
     const positionItems = () => {
       const positions = [];
       items.forEach((item) => {
@@ -167,9 +167,9 @@ export default function AnimatedServices() {
       });
     };
 
-    // Initialize animations with a slight delay
+    // Initialize animations
     setTimeout(() => {
-      canvas.style.opacity = '1';
+      canvas.style.opacity = "1";
       drawNeuralNetwork();
       positionItems();
       setIsLoading(false);
@@ -186,9 +186,9 @@ export default function AnimatedServices() {
     <div
       ref={containerRef}
       className={`relative flex items-center justify-center w-full h-screen overflow-hidden transition-opacity duration-500 ${
-        isLoading ? 'opacity-0' : 'opacity-100'
+        isLoading ? "opacity-0" : "opacity-100"
       }`}
-      style={{ backgroundColor: '#161E42' }}
+      style={{ backgroundColor: "#161E42" }}
     >
       <style>
         {`
@@ -221,15 +221,26 @@ export default function AnimatedServices() {
               box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
             }
           }
+          /* Hook-specific animations */
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
         `}
       </style>
 
-      {/* Central Tagline with smooth transition */}
+      {/* Central Tagline */}
       <h1
-        className="absolute text-white font-bold text-3xl max-w-[90%] text-center z-20 transition-all duration-500"
+        className="absolute text-white font-extrabold text-5xl md:text-6xl lg:text-7xl max-w-[80%] text-center z-20 transition-all duration-1000 animate-fadeIn"
         style={{
-          top: '50%',
-          left: '50%',
+          top: "50%",
+          left: "50%",
           transform: `translate(-50%, -50%) scale(${isLoading ? 0.9 : 1})`,
           opacity: isLoading ? 0 : 1,
         }}
@@ -241,6 +252,11 @@ export default function AnimatedServices() {
         <div
           key={index}
           className={`service-item absolute text-white text-sm font-semibold px-4 py-2 rounded-md shadow-md pointer-events-none ${service.gradient}`}
+          style={{
+            transition: "transform 0.3s ease-in-out",
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
+          onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
         >
           {service.name}
         </div>
@@ -250,10 +266,11 @@ export default function AnimatedServices() {
       {ads.map((ad, index) => (
         <a
           key={index}
-          href={`https://${ad.name.toLowerCase().replace(' ', '')}.com`}
+          href={`https://${ad.name.toLowerCase().replace(" ", "")}.com`}
           target="_blank"
           rel="noopener noreferrer"
           className={`service-item absolute text-white text-sm font-semibold px-4 py-2 rounded-md shadow-md pulsate pointer-events-auto ${ad.gradient}`}
+          aria-label={`Visit ${ad.name}`}
         >
           {ad.name}
         </a>

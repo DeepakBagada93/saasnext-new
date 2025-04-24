@@ -67,11 +67,13 @@ export default function Home() {
       name: "Next.js",
       icon: "/icons/nextjs.svg",
       content: [
-        "SEO-friendly for better search rankings",
-        "Optimized performance with static & server-side rendering",
-        "Highly scalable and efficient for complex applications",
-        "Seamless API integration with built-in API routes",
-        "Supports modern features like ISR (Incremental Static Regeneration)",
+        "SEO-friendly framework for better search rankings and organic traffic.",
+        "Optimized performance with static site generation (SSG) and server-side rendering (SSR).",
+        "Highly scalable architecture ideal for enterprise-level applications.",
+        "Seamless API integration with built-in API routes for backend functionality.",
+        "Supports modern features like ISR (Incremental Static Regeneration) for dynamic updates without rebuilding.",
+        "Perfect for building fast, secure, and efficient web applications with React.",
+        "Keywords: Next.js development, SSR, SSG, React framework, web performance optimization.",
       ],
     },
     {
@@ -79,11 +81,13 @@ export default function Home() {
       name: "Vue.js",
       icon: "/icons/vuejs.svg",
       content: [
-        "Lightweight and highly flexible framework",
-        "Reactive data binding for smooth user experience",
-        "Component-based architecture for modular development",
-        "Easy integration with Vuex for state management",
-        "Perfect for building interactive UI and SPAs (Single Page Applications)",
+        "Lightweight and flexible JavaScript framework for building interactive UIs.",
+        "Reactive data binding ensures smooth user experience and real-time updates.",
+        "Component-based architecture promotes modular and reusable code.",
+        "Easy integration with Vuex for centralized state management in complex apps.",
+        "Ideal for creating single-page applications (SPAs) and progressive web apps (PWAs).",
+        "Backed by a vibrant community and extensive plugin ecosystem.",
+        "Keywords: Vue.js development, reactive programming, SPA, PWA, frontend framework.",
       ],
     },
     {
@@ -91,11 +95,13 @@ export default function Home() {
       name: "Angular.js",
       icon: "/icons/angular.svg",
       content: [
-        "Enterprise-level application development with TypeScript",
-        "Two-way data binding for real-time updates",
-        "Built-in dependency injection for modularity",
-        "Powerful CLI for faster development",
-        "Backed by Google, ensuring long-term support",
+        "Enterprise-grade framework powered by TypeScript for robust application development.",
+        "Two-way data binding simplifies real-time synchronization between models and views.",
+        "Built-in dependency injection enhances modularity and testability of components.",
+        "Powerful Angular CLI streamlines development workflows and automates repetitive tasks.",
+        "Backed by Google, ensuring long-term support and frequent updates.",
+        "Perfect for large-scale applications requiring high performance and scalability.",
+        "Keywords: Angular development, TypeScript, two-way data binding, enterprise solutions, frontend framework.",
       ],
     },
     {
@@ -103,11 +109,13 @@ export default function Home() {
       name: "Laravel",
       icon: "/icons/laravel.svg",
       content: [
-        "Elegant syntax for rapid backend development",
-        "Robust MVC framework with built-in security",
-        "Powerful Eloquent ORM for database management",
-        "Supports RESTful APIs and microservices",
-        "Perfect for scalable and secure web applications",
+        "Elegant PHP framework with an expressive syntax for rapid backend development.",
+        "Robust MVC architecture ensures clean separation of concerns and maintainable code.",
+        "Powerful Eloquent ORM simplifies database interactions and relationships.",
+        "Supports RESTful APIs and microservices for scalable backend solutions.",
+        "Built-in security features protect against common vulnerabilities like SQL injection and XSS.",
+        "Perfect for building secure, scalable, and feature-rich web applications.",
+        "Keywords: Laravel development, PHP framework, RESTful APIs, backend development, web security.",
       ],
     },
     {
@@ -115,11 +123,12 @@ export default function Home() {
       name: "Django",
       icon: "/icons/django.svg",
       content: [
-        "Fast and secure web development with Python",
-        "Built-in admin panel for easy content management",
-        "Highly scalable for large applications",
-        "Perfect for AI, ML, and data-driven applications",
-        "Follows the DRY (Don't Repeat Yourself) principle",
+        "Fast and secure Python-based framework for rapid web development.",
+        "Built-in admin panel enables easy content management and administration.",
+        "Highly scalable architecture suitable for large-scale applications.",
+        "Perfect for AI, machine learning, and data-driven applications due to Python's ecosystem.",
+        "Follows the DRY (Don't Repeat Yourself) principle for clean and reusable code.",
+        "Keywords: Django development, Python framework, AI integration, scalable web apps, backend development.",
       ],
     },
     {
@@ -127,11 +136,13 @@ export default function Home() {
       name: "WordPress",
       icon: "/icons/wordpress.svg",
       content: [
-        "User-friendly CMS with drag-and-drop builders",
-        "SEO-optimized and mobile-responsive themes",
-        "Thousands of plugins for enhanced functionality",
-        "Ideal for blogs, business sites, and e-commerce",
-        "Supports WooCommerce for online stores",
+        "User-friendly CMS with drag-and-drop builders for effortless website creation.",
+        "SEO-optimized themes and plugins ensure higher search engine rankings.",
+        "Thousands of plugins extend functionality for blogs, e-commerce, and business sites.",
+        "Mobile-responsive designs adapt seamlessly to all devices.",
+        "Supports WooCommerce for building feature-rich online stores.",
+        "Perfect for small businesses, bloggers, and e-commerce websites.",
+        "Keywords: WordPress development, CMS, e-commerce, SEO optimization, website builder.",
       ],
     },
     {
@@ -139,11 +150,12 @@ export default function Home() {
       name: "Google Ads",
       icon: "/icons/google-ads.svg",
       content: [
-        "Reach high-intent customers via search and display ads",
-        "Highly targeted campaigns based on keywords and audience",
-        "Scalable budget-friendly advertising options",
-        "In-depth analytics and conversion tracking",
-        "Perfect for driving website traffic and generating leads",
+        "Reach high-intent customers through targeted search and display ad campaigns.",
+        "Highly customizable campaigns based on keywords, demographics, and audience behavior.",
+        "Scalable budget options cater to businesses of all sizes.",
+        "In-depth analytics and conversion tracking provide actionable insights.",
+        "Perfect for driving website traffic, generating leads, and increasing sales.",
+        "Keywords: Google Ads management, PPC advertising, keyword targeting, lead generation, digital marketing.",
       ],
     },
     {
@@ -151,11 +163,12 @@ export default function Home() {
       name: "Facebook Ads",
       icon: "/icons/facebook-ads.svg",
       content: [
-        "Hyper-targeted audience segmentation",
-        "Diverse ad formats (carousel, video, stories, etc.)",
-        "Cost-effective marketing with high engagement",
-        "AI-driven optimization for better ad performance",
-        "Perfect for brand awareness, lead generation, and e-commerce",
+        "Hyper-targeted audience segmentation ensures ads reach the right people.",
+        "Diverse ad formats include carousel, video, stories, and image ads for maximum engagement.",
+        "Cost-effective marketing solution with high ROI potential.",
+        "AI-driven optimization improves ad performance and reduces costs.",
+        "Perfect for brand awareness, lead generation, and driving e-commerce sales.",
+        "Keywords: Facebook Ads management, social media marketing, audience targeting, ad optimization, digital advertising.",
       ],
     },
   ];
@@ -667,36 +680,35 @@ export default function Home() {
 
 
 
-      <section className="container mx-auto px-6 py-12 bg-[#161E42] text-white">
-        {/* Heading Section */}
-        <div className="text-left">
-          <h2 className="text-4xl font-extrabold">
-            Saasnext Helps You <span className="text-orange-500">Grow Your Business</span>
-          </h2>
-          <p className="text-gray-300 text-lg mt-3">
-            We provide top-tier digital solutions that drive growth, increase visibility, and enhance customer engagement.
-          </p>
-        </div>
+<section className="container mx-auto px-6 py-16 bg-[#161E42] text-white">
+  {/* Heading Section */}
+  <div className="text-center md:text-left">
+    <h2 className="text-5xl font-extrabold leading-tight mb-4">
+      Saasnext Helps You <span className="text-orange-500">Grow Your Business</span>
+    </h2>
+    <p className="text-gray-300 text-lg max-w-3xl mx-auto md:mx-0">
+      We provide top-tier digital solutions that drive growth, increase visibility, and enhance customer engagement.
+    </p>
+  </div>
 
-        {/* Enhanced Progress Bar Container */}
-        <div className="bg-[#1F2A55] mt-10 p-8 rounded-lg shadow-lg border border-gray-700">
-          {growthFactors.map((factor, index) => (
-            <div key={index} className="mb-6">
-              <div className="flex justify-between font-semibold text-lg">
-                <span className="text-gray-200">{factor.name}</span>
-                <span className="text-orange-400">{progressValues[index]}%</span>
-              </div>
-              <div className="w-full bg-gray-700 h-3 rounded-full mt-2 overflow-hidden">
-                <div
-                  className="bg-orange-400 h-3 rounded-full transition-all duration-1000 ease-in-out"
-                  style={{ width: `${progressValues[index]}%` }}
-                ></div>
-              </div>
-            </div>
-          ))}
+  {/* Enhanced Progress Bar Container */}
+  <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {growthFactors.map((factor, index) => (
+      <div key={index} className="bg-[#1F2A55] p-6 rounded-lg shadow-md border border-gray-700 transition-transform duration-300 hover:scale-105">
+        <div className="flex justify-between items-center mb-4">
+          <h3 className="text-xl font-semibold text-gray-200">{factor.name}</h3>
+          <span className="text-orange-400 font-bold">{progressValues[index]}%</span>
         </div>
-      </section>
-
+        <div className="w-full bg-gray-700 h-3 rounded-full overflow-hidden">
+          <div
+            className="bg-orange-400 h-3 rounded-full transition-all duration-1000 ease-in-out"
+            style={{ width: `${progressValues[index]}%` }}
+          ></div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* Enhanced Section Divider */}
             <div className="bg-gradient-to-r from-[#161E42] via-[#1F2A56] to-[#161E42] py-12">
@@ -717,54 +729,69 @@ export default function Home() {
             </div>
 
 
-      <section className="container mx-auto px-6 py-12 text-center bg-[#161E42] text-white">
-        {/* Centered Heading */}
-        <div className="mb-8">
-          <h2 className="text-4xl font-extrabold text-white">Choose Your <span className="text-orange-500">Tech Stack</span></h2>
-          <p className="text-gray-300 text-lg mt-3 max-w-2xl mx-auto">
-            Select the best technologies for your web application, ensuring high performance, scalability, and seamless user experience.
-          </p>
-        </div>
+            <section className="container mx-auto px-6 py-16 text-center bg-[#161E42] text-white">
+  {/* Centered Heading */}
+  <div className="mb-12">
+    <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-400">
+      Choose Your <span className="bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">Tech Stack</span>
+    </h2>
+    <p className="text-gray-300 text-lg mt-4 max-w-3xl mx-auto">
+      Select the best technologies for your web application, ensuring high performance, scalability, and seamless user experience.
+    </p>
+  </div>
 
-        {/* Tab Container */}
-        <div className="bg-[#1F2A55] p-8 rounded-xl shadow-xl border border-gray-700">
-          {/* Tabs Aligned Center */}
-          <div className="flex flex-wrap justify-center gap-4 border-b border-gray-600 pb-4">
-            {stacks.map((stack) => (
-              <button
-                key={stack.id}
-                onClick={() => setActiveTab(stack.id)}
-                className={`p-4 rounded-lg transition-all flex flex-col items-center w-28 ${activeTab === stack.id
-                    ? "bg-orange-500 text-white shadow-lg border-orange-500"
-                    : "bg-gray-700 text-gray-300 border border-gray-600 hover:border-orange-400 transition-all"
-                  }`}
-              >
-                <img src={stack.icon} alt={stack.name} className="w-12 h-12" />
-                <span className="text-sm mt-2 font-medium">{stack.name}</span>
-              </button>
-            ))}
-          </div>
+  {/* Tab Container */}
+  <div className="bg-[#1F2A55] p-8 rounded-3xl shadow-2xl border border-gray-700 overflow-hidden">
+    {/* Tabs Aligned Center */}
+    <div className="flex flex-wrap justify-center gap-6 border-b border-gray-600 pb-6">
+      {stacks.map((stack) => (
+        <button
+          key={stack.id}
+          onClick={() => setActiveTab(stack.id)}
+          className={`p-4 rounded-2xl transition-all flex flex-col items-center w-32 ${
+            activeTab === stack.id
+              ? "bg-gradient-to-br from-orange-500 to-yellow-400 text-white shadow-xl"
+              : "bg-gray-700 text-gray-300 border border-gray-600 hover:border-orange-400 hover:shadow-md transition-all"
+          }`}
+        >
+          <img
+            src={stack.icon}
+            alt={stack.name}
+            className="w-12 h-12 object-contain mb-2"
+          />
+          <span className="text-sm font-semibold">{stack.name}</span>
+        </button>
+      ))}
+    </div>
 
-          {/* Tab Content */}
-          <div className="mt-6 p-6 bg-gray-800 rounded-lg shadow-lg border border-gray-700">
-            <h3 className="text-2xl font-semibold text-white">
-              {stacks.find((stack) => stack.id === activeTab)?.name}
-            </h3>
-            <p className="text-gray-300 text-lg mt-2">
-              Why choose <span className="text-orange-400">{stacks.find((stack) => stack.id === activeTab)?.name}</span>?
-            </p>
-            <ul className="mt-4 text-gray-300 text-lg text-left mx-auto max-w-lg space-y-3">
-              {stacks
-                .find((stack) => stack.id === activeTab)
-                ?.content.map((benefit, index) => (
-                  <li key={index} className="flex items-center gap-3">
-                    <span className="text-orange-400 text-lg">✔</span> {benefit}
-                  </li>
-                ))}
-            </ul>
-          </div>
-        </div>
-      </section>
+    {/* Tab Content */}
+    <div className="mt-8 p-8 bg-gray-800 rounded-3xl shadow-xl border border-gray-700 relative overflow-hidden">
+      {/* Gradient Overlay for Creative Effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-purple-900/20 to-transparent pointer-events-none"></div>
+
+      <h3 className="text-3xl font-bold text-white relative z-10">
+        {stacks.find((stack) => stack.id === activeTab)?.name}
+      </h3>
+      <p className="text-gray-300 text-lg mt-3 relative z-10">
+        Why choose{" "}
+        <span className="text-orange-400 font-semibold">
+          {stacks.find((stack) => stack.id === activeTab)?.name}
+        </span>
+        ?
+      </p>
+      <ul className="mt-6 text-gray-300 text-lg text-left space-y-4 relative z-10 max-w-lg mx-auto">
+        {stacks
+          .find((stack) => stack.id === activeTab)
+          ?.content.map((benefit, index) => (
+            <li key={index} className="flex items-center gap-3">
+              <span className="text-green-400 text-xl">✔</span>
+              <span>{benefit}</span>
+            </li>
+          ))}
+      </ul>
+    </div>
+  </div>
+</section>
 
       
       <ContactForm />
@@ -803,6 +830,48 @@ export default function Home() {
           <hr className="border-t-2 border-gray-700" />
         </div>
       </div>
+
+      <section className="bg-[#101936] text-white py-20 px-6">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12">
+    {/* Content Column */}
+    <div>
+      <h2 className="text-4xl font-bold mb-6 underline underline-offset-4 decoration-orange-400">
+        Why Invest in Web Apps, Lead Generation & AI?
+      </h2>
+      <ul className="space-y-4 text-lg text-gray-300">
+        <li>
+          🚀 <strong className="text-white">Web Apps Boost Efficiency:</strong> Automate processes with custom SaaS development services.
+        </li>
+        <li>
+          🎯 <strong className="text-white">Lead Generation Drives Sales:</strong> Connect with prospects via Junagadh SaaS lead generation experts.
+        </li>
+        <li>
+          🤖 <strong className="text-white">AI Agents Save Time:</strong> Automate tasks with AI-driven web solutions in Junagadh.
+        </li>
+        <li>
+          🏆 <strong className="text-white">Competitive Edge:</strong> Stand out with solutions from top SaaS developers near Junagadh.
+        </li>
+        <li>
+          📈 <strong className="text-white">Scalability:</strong> Grow with scalable SaaS architecture design from a SaaS development company.
+        </li>
+      </ul>
+      <p className="mt-6 text-orange-400 font-semibold">
+        SaaSNext delivers solutions that give you a competitive advantage.
+      </p>
+    </div>
+
+    {/* Image Column */}
+    <div className="flex justify-center">
+      <img
+        src="/images/saasnextwebapp.jpg"
+        alt="SaaS Growth Illustration"
+        className="w-full max-w-md rounded-xl shadow-2xl"
+      />
+    </div>
+  </div>
+</section>
+
+
 
       <section className="bg-gradient-to-r from-[#161E42] to-[#1f2a60] text-white py-20 px-6">
   <div className="max-w-4xl mx-auto text-center">
