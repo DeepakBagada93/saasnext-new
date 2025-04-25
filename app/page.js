@@ -276,7 +276,7 @@ export default function Home() {
 
         <div className="flex flex-wrap gap-6 mt-10">
           <a
-            href="#contact"
+            href="/contact"
             className="group px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-xl
                      shadow-lg hover:shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-1"
           >
@@ -288,7 +288,7 @@ export default function Home() {
             </span>
           </a>
           <a
-            href="#services"
+            href="/services"
             className="group px-8 py-4 border-2 border-orange-500 text-orange-500 font-semibold rounded-xl
                      hover:bg-orange-500 hover:text-white transition-all duration-300 transform hover:-translate-y-1"
           >
@@ -662,7 +662,7 @@ export default function Home() {
       {/* CTA Button */}
       <div className="text-center">
         <a
-          href="#contact"
+          href="/contact"
           className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 
                    text-white font-semibold rounded-xl shadow-xl hover:shadow-orange-500/20 
                    transform hover:-translate-y-1 transition-all duration-300"
@@ -903,9 +903,12 @@ export default function Home() {
       </div>
     </div>
 
-    <button className="mt-4 px-8 py-3 bg-orange-500 hover:bg-orange-600 transition-all rounded-xl text-white text-lg font-semibold shadow-lg">
+    <a href="/contact" className="mt-4 px-8 py-3 bg-orange-500 hover:bg-orange-600 transition-all rounded-xl text-white text-lg font-semibold shadow-lg flex items-center gap-2">
       Let's Get Started
-    </button>
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+      </svg>
+    </a>
   </div>
 </section>
 

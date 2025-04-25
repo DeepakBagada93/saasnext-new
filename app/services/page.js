@@ -47,7 +47,7 @@ export default function Services() {
 
     {/* Call to Action with hover effects */}
     <a
-      href="#contact"
+      href="/contact"
       className="inline-block relative px-8 py-4 bg-gradient-to-r from-green-500 to-blue-600 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 overflow-hidden"
     >
       <span className="relative z-10">🚀 Start Your Project Today</span>
@@ -64,14 +64,14 @@ export default function Services() {
     <div className="text-center lg:text-left space-y-6">
       <h2 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight">
         Why Choose{" "}
-        <span className="relative inline-block text-green-400">
+        <span className="relative inline-block text-orange-400">
           Saasnext
-          <span className="absolute left-0 bottom-0 w-full h-[3px] bg-green-400 animate-underline"></span>
+          <span className="absolute left-0 bottom-0 w-full h-[3px] bg-orange-400 animate-underline"></span>
         </span>
         ?
       </h2>
       <p className="text-lg text-slate-300 max-w-xl">
-        As a trusted <strong className="text-green-400">web application development company in Junagadh</strong>, we provide cutting-edge web development and <strong className="text-green-400">lead generation services for SaaS</strong> to help you grow, scale, and dominate your niche online. Let us turn your vision into a high-performing digital reality with our expertise in <strong className="text-green-400">custom SaaS development services</strong> and <strong className="text-green-400">AI agent development services</strong>.
+        As a trusted <strong className="text-orange-400">web application development company in Junagadh</strong>, we provide cutting-edge web development and <strong className="text-orange-400">lead generation services for SaaS</strong> to help you grow, scale, and dominate your niche online. Let us turn your vision into a high-performing digital reality with our expertise in <strong className="text-orange-400">custom SaaS development services</strong> and <strong className="text-orange-400">AI agent development services</strong>.
       </p>
     </div>
 
@@ -81,30 +81,30 @@ export default function Services() {
         {
           title: "Custom Web Development",
           description:
-            "As a leading <strong className='text-green-400'>web development company in Junagadh</strong>, we build tailored solutions that align with your business goals.",
+            "As a leading <strong className='text-orange-400'>web development company in Junagadh</strong>, we build tailored solutions that align with your business goals.",
         },
         {
           title: "AI-Powered Solutions",
           description:
-            "Leverage our expertise as an <strong className='text-green-400'>AI development company</strong> to automate tasks and enhance productivity.",
+            "Leverage our expertise as an <strong className='text-orange-400'>AI development company</strong> to automate tasks and enhance productivity.",
         },
         {
           title: "Lead Generation Services",
           description:
-            "Our <strong className='text-green-400'>lead generation company in Junagadh</strong> delivers high-quality leads to fuel your growth.",
+            "Our <strong className='text-orange-400'>lead generation company in Junagadh</strong> delivers high-quality leads to fuel your growth.",
         },
         {
           title: "Scalable SaaS Platforms",
           description:
-            "We specialize in <strong className='text-green-400'>custom SaaS development services</strong>, ensuring scalability and future-ready solutions.",
+            "We specialize in <strong className='text-orange-400'>custom SaaS development services</strong>, ensuring scalability and future-ready solutions.",
         },
       ].map((feature, index) => (
         <div
           key={index}
-          className="group bg-[#1f2a4a] border border-transparent hover:border-green-400 p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+          className="group bg-[#1f2a4a] border border-transparent hover:border-orange-400 p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300"
         >
           {/* Placeholder for icon */}
-          <div className="flex items-center justify-center h-12 w-12 bg-green-500 rounded-full text-white mb-4 mx-auto lg:mx-0">
+          <div className="flex items-center justify-center h-12 w-12 bg-orange-500 rounded-full text-white mb-4 mx-auto lg:mx-0">
             <span className="text-xl font-bold">{index + 1}</span>
           </div>
 
@@ -632,7 +632,7 @@ export default function Services() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#contact"
+            href="/contact"
             className="px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl
                  text-white font-semibold shadow-lg shadow-orange-500/20
                  hover:shadow-orange-500/40 transition-all duration-300

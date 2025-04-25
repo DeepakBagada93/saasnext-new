@@ -48,7 +48,8 @@ export default function Contact() {
   </div>
 </section>
 
-
+    {/* Contact Form Section */}
+    <ContactForm />
 
 
 
@@ -136,8 +137,7 @@ export default function Contact() {
 
 
   
-    {/* Contact Form Section */}
-    <ContactForm />
+
 
    
 

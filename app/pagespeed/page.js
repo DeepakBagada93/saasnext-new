@@ -104,13 +104,36 @@ export default function PageSpeedChecker() {
           {/* Lighthouse Scores */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {["performance", "seo", "accessibility", "best-practices", "pwa"].map((category) => {
-              const score = data.lighthouseResult.categories[category]?.score * 100 || "N/A";
+              const categoryData = data.lighthouseResult.categories[category.replace("-", "")];
+              let score = categoryData ? Math.round(categoryData.score * 100) : "N/A";
+              
+              // Adjust score based on ranges
+              if (score !== "N/A") {
+                if (score >= 90) {
+                  score = 100; // If score is 90 or above, show as 100
+                } else if (score >= 80) {
+                  score = 90; // If score is 80-89, show as 90
+                } else if (score >= 70) {
+                  score = 80; // If score is 70-79, show as 80
+                } else if (score >= 60) {
+                  score = 75; // If score is 60-69, show as 75
+                } else {
+                  score = Math.round(score / 10) * 10; // Round to nearest 10 for scores below 60
+                }
+              }
+
               return (
-                <div key={category} className="p-4 bg-white rounded-lg shadow">
+                <div key={category} className={`p-4 bg-white rounded-lg shadow ${
+                  score === 100 ? 'ring-2 ring-green-500' : ''
+                }`}>
                   <h3 className="text-lg font-semibold capitalize text-white bg-gray-800 p-2 rounded-md">
                     {category.replace("-", " ")}
                   </h3>
-                  <p className="text-black font-bold text-xl">{score}</p>
+                  <p className={`text-black font-bold text-xl ${
+                    score === 100 ? 'text-green-600' : ''
+                  }`}>
+                    {score}
+                  </p>
 
                   {/* Show Consultation Form if Score is Less Than 90 */}
                   {score !== "N/A" && score < 90 && (

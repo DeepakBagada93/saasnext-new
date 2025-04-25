@@ -399,7 +399,7 @@ export default function AboutUs() {
         </div>
         <div className="text-center md:text-right">
           <a
-            href="#contact"
+            href="/contact"
             className="inline-block px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 
                      rounded-xl text-white font-semibold shadow-lg shadow-orange-500/20 
                      hover:shadow-orange-500/40 transition-all duration-300 
