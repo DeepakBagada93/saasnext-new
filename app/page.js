@@ -1,8 +1,8 @@
 "use client";
 
-
 import ContactForm from './components/ContactForm';
 import AnimatedServices from './components/AnimatedServices';
+import Chatbot from './components/Chatbot';
 
 
 import { useState, useEffect } from "react";
@@ -200,6 +200,7 @@ export default function Home() {
 
 
   return (
+    <>
     <main className="min-h-screen bg-[#161E42]">
       {/* Hero Section - Adjusted spacing and vertical alignment */}
       <section className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#161E42] to-[#0A1128] text-white px-6 text-center overflow-hidden">
@@ -918,6 +919,8 @@ export default function Home() {
      
 
     </main>
+    <Chatbot />
+    </>
   );
 }
 
