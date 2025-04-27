@@ -3,14 +3,13 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 export const metadata = {
-  title: "SaasNext - Web App Development & Lead Generation",
-  description:
-    "SaaSNext builds high-performing web apps & drives leads. Expert development & marketing solutions.",
+  title: "SaasNext - Web Application Development Company in Junagadh | AI Solutions",
+  description: "Leading web application development company in Junagadh offering custom web apps, AI solutions, and lead generation services. Expert SaaS development & digital marketing solutions for business growth.",
   icons: {
     icon: {
       url: "/saasicon.png",
       type: "image/png",
-      sizes: "32x32 48x48 96x96"  // Multiple sizes for better display
+      sizes: "32x32 48x48 96x96"
     },
     shortcut: { url: "/saasicon.png", type: "image/png" },
     apple: { url: "/saasicon.png", type: "image/png" }
@@ -28,3 +27,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+

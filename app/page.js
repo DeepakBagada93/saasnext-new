@@ -4,8 +4,6 @@ import ContactForm from './components/ContactForm';
 import AnimatedServices from './components/AnimatedServices';
 import Chatbot from './components/Chatbot';
 import HeroSection from './components/HeroSection';
-
-
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -1014,7 +1012,7 @@ const EmailIcon = () => (
     <rect x="60" y="80" width="280" height="180" rx="12" fill="white" stroke="#333" strokeWidth="4" filter="url(#shadow)" />
 
     {/* Envelope Flap - With Animation */}
-    <path d="M60,80 L200,160 L340,80 L340,80 L60,80 Z" fill="url(#envelopeGradient)" stroke="#333" strokeWidth="3">
+    <path d="M60,80 L200,160 L340,80 L340,40 L60,40 L60,80 Z" fill="url(#envelopeGradient)" stroke="#333" strokeWidth="3">
       <animate attributeName="d"
         values="M60,80 L200,160 L340,80 L340,40 L60,40 L60,80 Z;
                       M60,80 L200,160 L340,80 L340,80 L60,80 Z;
@@ -1045,3 +1043,6 @@ const EmailIcon = () => (
     <line x1="100" y1="250" x2="300" y2="250" stroke="#eee" strokeWidth="6" />
   </svg>
 );
+
+
+

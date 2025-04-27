@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "About Us | Top Web Development & AI Solutions Company in Junagadh",
+  description: "Discover Junagadh's premier web application development and lead generation company. Expert AI solutions, custom SaaS development, and digital marketing services for sustainable business growth.",
+};
+
 export default function AboutUs() {
 
 

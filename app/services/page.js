@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Services | Web Development & Lead Generation Company in Junagadh",
+  description: "Professional web application development services in Junagadh. Specialized in AI solutions, lead generation, and custom SaaS development. Transform your business with our expert digital services.",
+};
+
 export default function Services() {
 
   const features = [
