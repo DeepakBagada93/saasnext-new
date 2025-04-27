@@ -59,19 +59,15 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            {/* Logo with enhanced hover animation */}
-            <Link href="/" className="relative group">
-              <div className="overflow-hidden rounded-lg">
-                <Image
-                  src="/logo2.png"
-                  alt="SaaSNext Logo"
-                  width={160}
-                  height={40}
-                  priority
-                  className="transition-all duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            {/* Simple Logo */}
+            <Link href="/" className="relative">
+              <Image
+                src="/logo2.png"
+                alt="SaaSNext Logo"
+                width={160}
+                height={40}
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation with enhanced hover effects */}
@@ -145,9 +141,9 @@ export default function Navbar() {
               <Image
                 src="/logo2.png"
                 alt="SaaSNext Logo"
-                width={150}
+                width={250}
                 height={40}
-                className="w-[150px] h-auto"
+                className="w-[250px] h-auto"
               />
             </Link>
             <button
