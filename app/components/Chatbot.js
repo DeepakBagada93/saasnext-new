@@ -7,6 +7,23 @@ const Chatbot = () => {
   const [answers, setAnswers] = useState({});
   const [isMinimized, setIsMinimized] = useState(true); // Chatbot starts minimized
 
+  const handleClose = () => {
+    setIsOpen(false);
+    setIsMinimized(true);
+    // Optionally reset the chat state
+    setCurrentStep(0);
+    setAnswers({});
+  };
+
+  const handleMinimize = () => {
+    setIsMinimized(true);
+  };
+
+  const handleOpen = () => {
+    setIsMinimized(false);
+    setIsOpen(true);
+  };
+
   const questions = [
     {
       id: 'service',
@@ -193,13 +210,49 @@ const Chatbot = () => {
     <div className={`fixed bottom-4 sm:bottom-8 right-4 sm:right-8 z-50 transition-all duration-300 ${isMinimized ? 'w-12 h-12' : 'w-[90vw] sm:w-[400px] max-w-[400px]'}`}>
       {isMinimized ? (
         <button
-          onClick={() => {
-            setIsMinimized(false); // Expand the chatbot
-            setIsOpen(true); // Open the chatbot
-          }}
-          className="relative w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
+          onClick={handleOpen}
+          className="relative w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group"
         >
-          💬
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            className="w-6 h-6 transition-transform duration-300 group-hover:scale-110"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            {/* Animated dots */}
+            <circle cx="12" cy="12" r="1">
+              <animate
+                attributeName="opacity"
+                values="0;1;0"
+                dur="1.5s"
+                repeatCount="indefinite"
+                begin="0s"
+              />
+            </circle>
+            <circle cx="16" cy="12" r="1">
+              <animate
+                attributeName="opacity"
+                values="0;1;0"
+                dur="1.5s"
+                repeatCount="indefinite"
+                begin="0.3s"
+              />
+            </circle>
+            <circle cx="8" cy="12" r="1">
+              <animate
+                attributeName="opacity"
+                values="0;1;0"
+                dur="1.5s"
+                repeatCount="indefinite"
+                begin="0.6s"
+              />
+            </circle>
+          </svg>
         </button>
       ) : (
         <div className="bg-[#1F2A56] rounded-xl shadow-2xl overflow-hidden border border-gray-700/30">
@@ -211,51 +264,57 @@ const Chatbot = () => {
             </h3>
             <div className="flex gap-2">
               <button
-                onClick={() => setIsMinimized(true)} // Minimize the chatbot
-                className="text-gray-300 hover:text-white transition-colors"
+                onClick={handleMinimize}
+                className="text-gray-300 hover:text-white transition-colors p-2 rounded-full hover:bg-[#1F2A56]/50"
               >
-                ➖
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                </svg>
               </button>
               <button
-                onClick={() => setIsOpen(false)} // Close the chatbot
-                className="text-gray-300 hover:text-white transition-colors"
+                onClick={handleClose}
+                className="text-gray-300 hover:text-white transition-colors p-2 rounded-full hover:bg-[#1F2A56]/50"
               >
-                ✕
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
               </button>
             </div>
           </div>
 
           {/* Chat Content */}
-          <div className="p-4 bg-[#161E42] h-[60vh] sm:h-[400px] overflow-y-auto">
-            <div className="space-y-4">
-              {currentStep < questions.length && (
-                <div className="bg-[#2B3765] p-4 rounded-xl border border-gray-700/30">
-                  <p className="text-white font-medium">
-                    {questions[currentStep].question}
-                  </p>
-                </div>
-              )}
+          {isOpen && (
+            <div className="p-4 bg-[#161E42] h-[60vh] sm:h-[400px] overflow-y-auto">
+              <div className="space-y-4">
+                {currentStep < questions.length && (
+                  <div className="bg-[#2B3765] p-4 rounded-xl border border-gray-700/30">
+                    <p className="text-white font-medium">
+                      {questions[currentStep].question}
+                    </p>
+                  </div>
+                )}
 
-              {currentStep < questions.length ? (
-                renderQuestion()
-              ) : (
-                <div className="text-center">
-                  <p className="text-orange-400 font-medium">
-                    Thanks for your interest! We'll get back to you soon.
-                  </p>
-                  <button
-                    onClick={() => {
-                      setCurrentStep(0);
-                      setAnswers({});
-                    }}
-                    className="mt-4 px-6 py-3 bg-orange-500 text-white rounded-xl hover:bg-orange-600 transition-all duration-300"
-                  >
-                    Start New Chat
-                  </button>
-                </div>
-              )}
+                {currentStep < questions.length ? (
+                  renderQuestion()
+                ) : (
+                  <div className="text-center">
+                    <p className="text-orange-400 font-medium">
+                      Thanks for your interest! We'll get back to you soon.
+                    </p>
+                    <button
+                      onClick={() => {
+                        setCurrentStep(0);
+                        setAnswers({});
+                      }}
+                      className="mt-4 px-6 py-3 bg-orange-500 text-white rounded-xl hover:bg-orange-600 transition-all duration-300"
+                    >
+                      Start New Chat
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       )}
     </div>

@@ -3,6 +3,7 @@
 import ContactForm from './components/ContactForm';
 import AnimatedServices from './components/AnimatedServices';
 import Chatbot from './components/Chatbot';
+import HeroSection from './components/HeroSection';
 
 
 import { useState, useEffect } from "react";
@@ -329,6 +330,8 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+<HeroSection/>
 
 
 <section className="container mx-auto bg-[#1F2A56] text-white px-4 py-16 mt-8 mb-8">
