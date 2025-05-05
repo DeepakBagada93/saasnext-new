@@ -200,7 +200,7 @@ export default function AboutUs() {
     {/* Left Column - Image */}
     <div className="flex flex-col items-center justify-center">
       <img 
-        src="/images/saasnext about.jpg" 
+        src="/images/saasnext4.jpg" 
         alt="Web Development" 
         className="w-full max-w-md rounded-lg shadow-lg mb-4"
       />
