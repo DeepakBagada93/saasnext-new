@@ -62,22 +62,27 @@ export default function AboutUs() {
 
     {/* Description with glowing effect */}
     <p className="text-lg md:text-xl leading-relaxed text-gray-300 animate-fade-in-up">
-      Saasnext is a top-tier{" "}
-      <strong className="text-blue-400 glow">Web App Development Company in Junagadh</strong> and{" "}
-      <strong className="text-green-400 glow">Lead Generation Services for SaaS</strong>, 
-      dedicated to building high-performance, scalable digital solutions. As a trusted{" "}
-      <strong className="text-yellow-400 glow">AI Solutions Provider in Junagadh</strong>, we empower businesses to{" "}
-      <strong className="text-yellow-400 glow">grow, manage, and automate</strong>{" "}
-      their digital presence using innovative technology like custom SaaS development services and AI agent development.
+      <span className="block font-bold text-xl text-blue-300 tracking-wide mb-4">Where Code Meets Vision.</span>
+      We don't just build apps — we bring ideas to life. At <strong className="text-yellow-400 glow">Saasnext</strong>, innovation is our language, and technology is our canvas.
+      <br /><br />
+      As a leading{" "}
+      <strong className="text-blue-400 glow">Web App Development Company in Junagadh</strong>, we craft scalable SaaS platforms that grow with your business. Our team lives at the intersection of creativity and code — building tools that empower startups, scale enterprises, and redefine industries.
+      <br /><br />
+      Need to turn clicks into customers? Dive into the future with our{" "}
+      <strong className="text-green-400 glow">Lead Generation Services for SaaS</strong> — smart, targeted, and performance-driven. And as your trusted{" "}
+      <strong className="text-yellow-400 glow">AI Solutions Provider in Junagadh</strong>, we integrate cutting-edge AI agents to automate workflows, unlock insights, and boost efficiency.
+      <br /><br />
+      Whether you're launching a product or optimizing operations, we help you{" "}
+      <strong className="text-purple-400 glow">grow, manage, and lead</strong> in the digital age — one line of clean code at a time.
     </p>
 
     {/* Call to Action with 3D hover effect */}
     <div className="mt-10 animate-fade-in-up">
       <a
         href="/contact"
-        className="inline-block relative bg-gradient-to-r from-orange-500 to-pink-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 hover:scale-105 overflow-hidden"
+        className="inline-block relative bg-gradient-to-r from-orange-500 to-pink-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 hover:scale-105 overflow-hidden group"
       >
-        <span className="relative z-10">Get in Touch</span>
+        <span className="relative z-10">Start Your Journey Today →</span>
         <span className="absolute inset-0 bg-white/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
       </a>
     </div>

@@ -42,20 +42,25 @@ export default function Services() {
   <div className="max-w-3xl relative z-10">
     {/* Heading with gradient shimmer effect */}
     <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-shimmer transition-all duration-500 hover:tracking-wide">
-      Empowering Your Vision with <span className="text-green-400 glow">Next-Gen Web Solutions</span> 🚀
+      Turning Ideas into Impact with <span className="text-green-400 glow">Digital Excellence</span> 🚀
     </h2>
 
     {/* Description with glowing effect */}
     <p className="text-lg sm:text-xl text-slate-300 mb-8 animate-fade-in-up">
-      At <span className="font-semibold text-white glow">Saasnext</span>, we don't just build apps — we engineer digital growth. As a trusted <strong className="text-blue-400 glow">web application development company in Junagadh</strong>, we deliver <strong className="text-purple-400 glow">custom SaaS development services</strong> and advanced <strong className="text-green-400 glow">lead generation services for SaaS</strong>. From sleek UI/UX to scalable solutions, we help you stand out and scale smart.
+      <span className="block font-bold text-lg text-blue-300 tracking-wide mb-3">Where Vision Meets Velocity.</span>
+      At <span className="font-semibold text-white glow">Saasnext</span>, we believe every great business starts with a bold idea — and ends with flawless execution.
+      <br /><br />
+      As a premier <strong className="text-blue-400 glow">Web Application Development Company in Junagadh</strong>, we specialize in crafting scalable SaaS platforms that evolve with your ambitions. From intuitive UI/UX design to full-stack development, our team turns complexity into simplicity.
+      <br /><br />
+      Looking to convert interest into action? Our <strong className="text-purple-400 glow">Lead Generation Services for SaaS</strong> are built to attract, engage, and convert. And with cutting-edge <strong className="text-green-400 glow">Custom SaaS Development Services</strong>, we give you the tools to outpace competition and lead the market.
     </p>
 
     {/* Call to Action with hover effects */}
     <a
       href="/contact"
-      className="inline-block relative px-8 py-4 bg-gradient-to-r from-green-500 to-blue-600 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 overflow-hidden"
+      className="inline-block relative px-8 py-4 bg-gradient-to-r from-green-500 to-blue-600 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group overflow-hidden"
     >
-      <span className="relative z-10">🚀 Start Your Project Today</span>
+      <span className="relative z-10">🚀 Launch Your Digital Transformation</span>
       <span className="absolute inset-0 bg-white/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
     </a>
   </div>

@@ -38,12 +38,14 @@ export default function Contact() {
 
     {/* Description with glowing effect */}
     <p className="text-lg sm:text-xl text-slate-300 leading-relaxed animate-fade-in-up">
-      At <span className="font-semibold text-white glow">Saasnext</span>, we specialize in{" "}
-      <strong className="text-blue-400 glow">web application development</strong> and{" "}
-      <strong className="text-green-400 glow">lead generation services for SaaS</strong>. As a trusted{" "}
-      <strong className="text-orange-400 glow">web development company in Junagadh</strong>, we empower businesses with{" "}
-      <strong className="text-purple-400 glow">custom SaaS development services</strong>,{" "}
-      <strong className="text-pink-400 glow">AI agent development services</strong>, and scalable digital solutions.
+      <span className="block font-bold text-lg text-blue-300 tracking-wide mb-3">Your Digital Growth Engine.</span>
+      We don’t just build apps — we fuel ambition. At <span className="font-semibold text-white glow">Saasnext</span>, we’re on a mission to turn bold ideas into powerful digital realities.
+      <br /><br />
+      As a trusted <strong className="text-orange-400 glow">Web Development Company in Junagadh</strong>, we specialize in crafting high-performance web applications and scalable <strong className="text-purple-400 glow">Custom SaaS Development Services</strong> that grow with your business.
+      <br /><br />
+      Need more than code? Our <strong className="text-blue-400 glow">Lead Generation Services for SaaS</strong> help you attract and convert your ideal customers — fast. And with our cutting-edge <strong className="text-pink-400 glow">AI Agent Development Services</strong>, we bring intelligence and automation to every layer of your tech stack.
+      <br /><br />
+      Your journey to smarter, faster, and more scalable growth starts here.
     </p>
   </div>
 </section>
@@ -78,7 +80,7 @@ export default function Contact() {
     {/* Left Column - Image with Overlay */}
     <div className="flex justify-center relative">
       <img 
-        src="/images/saasnext3.jpg" 
+        src="/images/saasnextcontact.jpg" 
         alt="Web Development" 
         className="w-full max-w-md rounded-lg shadow-lg"
       />

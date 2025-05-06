@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { Menu, X, Home, Users, Zap, Phone, Rocket } from "lucide-react";
+import { Users, Zap, Phone, Rocket } from "lucide-react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +26,7 @@ export default function Navbar() {
 
   // Navigation items
   const navItems = [
-    { href: "/", label: "Home", icon: <Home size={20} /> },
+    { href: "/", label: "Home", icon: <HomeIcon /> },
     { href: "/about-us", label: "About Us", icon: <Users size={20} /> },
     { href: "/services", label: "Services", icon: <Zap size={20} /> },
     { href: "/contact", label: "Contact", icon: <Phone size={20} /> },
@@ -99,18 +99,14 @@ export default function Navbar() {
               </Link>
             </div>
 
-            {/* Mobile Hamburger */}
+            {/* Mobile Hamburger (Custom SVG) */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden p-2.5 rounded-lg bg-[#1F2A56]/90 hover:bg-[#2A3670] border border-gray-700/30 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all duration-300 relative overflow-hidden group"
               aria-label="Toggle menu"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
-              {isMenuOpen ? (
-                <X size={24} className="text-orange-400 relative z-10 transition-transform rotate-90 group-hover:rotate-0" />
-              ) : (
-                <Menu size={24} className="text-gray-300 relative z-10 transition-transform group-hover:scale-110" />
-              )}
+              <HamburgerMenu isOpen={isMenuOpen} />
             </button>
           </div>
         </div>
@@ -132,7 +128,7 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
               className="p-2 rounded-lg hover:bg-[#2A3670]/50 transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-400"
             >
-              <X size={24} className="text-gray-300" />
+              <XIcon />
             </button>
           </div>
 
@@ -201,7 +197,72 @@ export default function Navbar() {
           from { opacity: 0; transform: translateX(20px); }
           to { opacity: 1; transform: translateX(0); }
         }
+
+        .menu-icon svg path {
+          transform-origin: center;
+          transition: all 0.3s ease-in-out;
+        }
       `}</style>
     </>
+  );
+}
+
+// Custom Home Icon (if you don't have one already)
+function HomeIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+      <polyline points="9 22 9 12 15 12 15 22"></polyline>
+    </svg>
+  );
+}
+
+// Custom Close (X) Icon
+function XIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  );
+}
+
+// Animated Hamburger Menu SVG
+function HamburgerMenu({ isOpen }) {
+  return (
+    <svg
+      className="menu-icon block w-6 h-6"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path
+        d="M3 12H21"
+        className="top-line"
+        style={{
+          transform: isOpen ? "translateY(0) rotate(45)" : "none",
+          opacity: isOpen ? 0 : 1,
+        }}
+      />
+      <path
+        d="M3 6H21"
+        className="middle-line"
+        style={{
+          opacity: isOpen ? 0 : 1,
+          transform: isOpen ? "scaleX(1.1)" : "none",
+        }}
+      />
+      <path
+        d="M3 18H21"
+        className="bottom-line"
+        style={{
+          transform: isOpen ? "translateY(0) rotate(-45)" : "none",
+          opacity: isOpen ? 0 : 1,
+        }}
+      />
+    </svg>
   );
 }

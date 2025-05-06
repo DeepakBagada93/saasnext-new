@@ -8,9 +8,9 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const headings = [
-    { text: "Build Powerful Web Apps 🚀", diagram: <CodeSnippet /> },
-    { text: "Generate More Leads 📈", diagram: <SalesFunnel /> },
-    { text: "Boost Business with Email Marketing ✉️", diagram: <EmailIcon /> },
+    { text: "Turn Ideas into Digital Magic ✨", diagram: <CodeSnippet /> },
+    { text: "Skyrocket Your Business Growth 🚀", diagram: <SalesFunnel /> },
+    { text: "Connect & Convert with Smart Marketing 💫", diagram: <EmailIcon /> },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -207,6 +207,49 @@ export default function Home() {
   <div className="absolute inset-0 z-0 overflow-hidden">
     {/* Animated gradient overlay */}
     <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 via-blue-500/20 to-pink-500/30 animate-pulse"></div>
+
+    {/* Neural Network Simulation - Dots and Lines */}
+    <svg className="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="neural-line" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#6366F1" stopOpacity="0.3" />
+          <stop offset="100%" stopColor="#EC4899" stopOpacity="0.3" />
+        </linearGradient>
+      </defs>
+
+      {/* Nodes */}
+      {[...Array(20)].map((_, i) => (
+        <circle
+          key={i}
+          cx={`${Math.random() * 100}%`}
+          cy={`${Math.random() * 100}%`}
+          r="2"
+          fill="#8B5CF6"
+          className="animate-pulse opacity-70"
+          style={{ animationDelay: `${Math.random()}s` }}
+        />
+      ))}
+
+      {/* Connections between nodes */}
+      {[...Array(30)].map((_, i) => {
+        const x1 = Math.random() * 100;
+        const y1 = Math.random() * 100;
+        const x2 = Math.random() * 100;
+        const y2 = Math.random() * 100;
+        return (
+          <line
+            key={`line-${i}`}
+            x1={`${x1}%`}
+            y1={`${y1}%`}
+            x2={`${x2}%`}
+            y2={`${y2}%`}
+            stroke="url(#neural-line)"
+            strokeWidth="0.5"
+            className="opacity-40"
+          />
+        );
+      })}
+    </svg>
 
     {/* Floating circles */}
     <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-purple-500 rounded-full opacity-20 blur-3xl animate-float"></div>
