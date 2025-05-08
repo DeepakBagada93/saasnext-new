@@ -375,103 +375,131 @@ export default function Home() {
 <HeroSection/>
 
 
-<section className="container mx-auto bg-[#1F2A56] text-white px-4 py-16 mt-8 mb-8">
-  <div className="max-w-6xl mx-auto text-left mb-12">
-    <h2 className="text-3xl sm:text-4xl font-bold mb-4">What We Offer</h2>
-    <p className="text-lg sm:text-xl text-slate-300">
-      As a leading web application development company in Junagadh, we deliver tailored digital solutions to accelerate your business growth.
-    </p>
-  </div>
+<section className="relative bg-[#1F2A56] text-white py-20 px-4 overflow-hidden">
+  {/* Decorative Background Elements */}
+  <div className="absolute top-10 left-10 w-64 h-64 bg-green-500/10 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-10 right-10 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-    {/* Card 1 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">🛠️</div>
-      <h3 className="text-xl font-semibold mb-2">Web Application Development</h3>
-      <p className="text-slate-300 text-base">
-        Build robust and scalable web applications tailored to your business needs.
+  <div className="max-w-7xl mx-auto relative z-10">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">Unleash Your Digital Potential</h2>
+      <p className="text-lg sm:text-xl text-orange-300 max-w-3xl mx-auto">
+        Transforming visions into digital reality - Your trusted tech partner in Junagadh for innovative solutions that drive success.
       </p>
     </div>
 
-    {/* Card 2 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">🌐</div>
-      <h3 className="text-xl font-semibold mb-2">SaaS Development</h3>
-      <p className="text-slate-300 text-base">
-        Develop cutting-edge Software-as-a-Service solutions to streamline your operations.
-      </p>
-    </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      {/* Card 1 */}
+      <div className="group bg-[#2B3765] p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-orange-400/30">
+        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-orange-400/10 group-hover:bg-orange-400/20 transition mb-6 mx-auto">
+          <span className="text-orange-400 text-2xl">🛠️</span>
+        </div>
+        <h3 className="text-xl font-semibold text-center mb-3 text-orange-400">Craft & Create</h3>
+        <p className="text-orange-300/90 text-center text-sm md:text-base">
+          Transforming ideas into powerful web applications that captivate and convert.
+        </p>
+      </div>
 
-    {/* Card 3 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">📈</div>
-      <h3 className="text-xl font-semibold mb-2">Lead Generation for SaaS</h3>
-      <p className="text-slate-300 text-base">
-        Drive growth with targeted lead generation services designed for SaaS businesses.
-      </p>
-    </div>
+      {/* Card 2 */}
+      <div className="group bg-[#2B3765] p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-green-400/30">
+        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-green-400/10 group-hover:bg-green-400/20 transition mb-6 mx-auto">
+          <span className="text-green-400 text-2xl">🌐</span>
+        </div>
+        <h3 className="text-xl font-semibold text-center mb-3">SaaS Development</h3>
+        <p className="text-slate-300 text-center text-sm md:text-base">
+          Develop cutting-edge Software-as-a-Service solutions to streamline your operations.
+        </p>
+      </div>
 
-    {/* Card 4 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">🤖</div>
-      <h3 className="text-xl font-semibold mb-2">AI Development</h3>
-      <p className="text-slate-300 text-base">
-        Harness the power of artificial intelligence with custom AI solutions.
-      </p>
-    </div>
+      {/* Card 3 */}
+      <div className="group bg-[#2B3765] p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-green-400/30">
+        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-green-400/10 group-hover:bg-green-400/20 transition mb-6 mx-auto">
+          <span className="text-green-400 text-2xl">📈</span>
+        </div>
+        <h3 className="text-xl font-semibold text-center mb-3">Lead Generation for SaaS</h3>
+        <p className="text-slate-300 text-center text-sm md:text-base">
+          Drive growth with targeted lead generation services designed for SaaS businesses.
+        </p>
+      </div>
 
-    {/* Card 5 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">💡</div>
-      <h3 className="text-xl font-semibold mb-2">AI Solutions Provider</h3>
-      <p className="text-slate-300 text-base">
-        Delivering innovative AI-driven solutions to solve complex business challenges.
-      </p>
-    </div>
+      {/* Card 4 */}
+      <div className="group bg-[#2B3765] p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-green-400/30">
+        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-green-400/10 group-hover:bg-green-400/20 transition mb-6 mx-auto">
+          <span className="text-green-400 text-2xl">🤖</span>
+        </div>
+        <h3 className="text-xl font-semibold text-center mb-3">AI Development</h3>
+        <p className="text-slate-300 text-center text-sm md:text-base">
+          Harness the power of artificial intelligence with custom AI solutions.
+        </p>
+      </div>
 
-    {/* Card 6 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">💻</div>
-      <h3 className="text-xl font-semibold mb-2">Web Development</h3>
-      <p className="text-slate-300 text-base">
-        Crafting high-quality websites and web applications for businesses in Junagadh.
-      </p>
-    </div>
+      {/* Card 5 */}
+      <div className="group bg-[#2B3765] p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-green-400/30">
+        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-green-400/10 group-hover:bg-green-400/20 transition mb-6 mx-auto">
+          <span className="text-green-400 text-2xl">💡</span>
+        </div>
+        <h3 className="text-xl font-semibold text-center mb-3">AI Solutions Provider</h3>
+        <p className="text-slate-300 text-center text-sm md:text-base">
+          Delivering innovative AI-driven solutions to solve complex business challenges.
+        </p>
+      </div>
 
-    {/* Card 7 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">🎯</div>
-      <h3 className="text-xl font-semibold mb-2">Lead Generation</h3>
-      <p className="text-slate-300 text-base">
-        Generate qualified leads for your business with our expert lead generation services.
-      </p>
-    </div>
+      {/* Card 6 */}
+      <div className="group bg-[#2B3765] p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-green-400/30">
+        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-green-400/10 group-hover:bg-green-400/20 transition mb-6 mx-auto">
+          <span className="text-green-400 text-2xl">💻</span>
+        </div>
+        <h3 className="text-xl font-semibold text-center mb-3">Web Development</h3>
+        <p className="text-slate-300 text-center text-sm md:text-base">
+          Crafting high-quality websites and web applications for businesses in Junagadh.
+        </p>
+      </div>
 
-    {/* Card 8 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">⚙️</div>
-      <h3 className="text-xl font-semibold mb-2">Custom SaaS Development</h3>
-      <p className="text-slate-300 text-base">
-        Tailor-made SaaS solutions to meet your unique business requirements.
-      </p>
-    </div>
+      {/* Card 7 */}
+      <div className="group bg-[#2B3765] p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-green-400/30">
+        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-green-400/10 group-hover:bg-green-400/20 transition mb-6 mx-auto">
+          <span className="text-green-400 text-2xl">🎯</span>
+        </div>
+        <h3 className="text-xl font-semibold text-center mb-3">Lead Generation</h3>
+        <p className="text-slate-300 text-center text-sm md:text-base">
+          Generate qualified leads for your business with our expert lead generation services.
+        </p>
+      </div>
 
-    {/* Card 9 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">🕵️‍♂️</div>
-      <h3 className="text-xl font-semibold mb-2">AI Agent Development</h3>
-      <p className="text-slate-300 text-base">
-        Build intelligent AI agents to automate tasks and enhance productivity.
-      </p>
-    </div>
+      {/* Card 8 */}
+      <div className="group bg-[#2B3765] p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-green-400/30">
+        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-green-400/10 group-hover:bg-green-400/20 transition mb-6 mx-auto">
+          <span className="text-green-400 text-2xl">⚙️</span>
+        </div>
+        <h3 className="text-xl font-semibold text-center mb-3">Custom SaaS Development</h3>
+        <p className="text-slate-300 text-center text-sm md:text-base">
+          Tailor-made SaaS solutions to meet your unique business requirements.
+        </p>
+      </div>
 
-    {/* Card 10 */}
-    <div className="bg-[#2B3765] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-      <div className="text-green-400 text-3xl mb-4">📊</div>
-      <h3 className="text-xl font-semibold mb-2">SaaS Lead Generation Agency</h3>
-      <p className="text-slate-300 text-base">
-        A dedicated agency focused on generating leads for SaaS companies.
-      </p>
+      {/* Card 9 */}
+      <div className="group bg-[#2B3765] p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-green-400/30">
+        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-green-400/10 group-hover:bg-green-400/20 transition mb-6 mx-auto">
+          <span className="text-green-400 text-2xl">🕵️‍♂️</span>
+        </div>
+        <h3 className="text-xl font-semibold text-center mb-3">AI Agent Development</h3>
+        <p className="text-slate-300 text-center text-sm md:text-base">
+          Build intelligent AI agents to automate tasks and enhance productivity.
+        </p>
+      </div>
+
+      {/* Card 10 */}
+      <div className="group bg-[#2B3765] p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-green-400/30">
+        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-green-400/10 group-hover:bg-green-400/20 transition mb-6 mx-auto">
+          <span className="text-green-400 text-2xl">📊</span>
+        </div>
+        <h3 className="text-xl font-semibold text-center mb-3">SaaS Lead Generation Agency</h3>
+        <p className="text-slate-300 text-center text-sm md:text-base">
+          A dedicated agency focused on generating leads for SaaS companies.
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
