@@ -14,7 +14,7 @@ export default function Services() {
 
   return (
     <>
-     <section className="relative w-full h-[600px] bg-gradient-to-br from-[#161E42] to-[#0A1128] flex items-center justify-center text-center px-6 overflow-hidden">
+     <section className="relative w-full min-h-[600px] sm:h-screen bg-gradient-to-br from-[#161E42] to-[#0A1128] flex items-center justify-center text-center px-4 sm:px-6 py-12 sm:py-16 overflow-hidden">
   {/* Background decorative elements */}
   <div className="absolute inset-0 z-0 overflow-hidden">
     {/* Animated gradient overlay */}
@@ -39,15 +39,15 @@ export default function Services() {
   </div>
 
   {/* Content container */}
-  <div className="max-w-3xl relative z-10">
+  <div className="max-w-3xl relative z-10 px-4 sm:px-6">
     {/* Heading with gradient shimmer effect */}
-    <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-shimmer transition-all duration-500 hover:tracking-wide">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-6 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-shimmer transition-all duration-500 hover:tracking-wide">
       Turning Ideas into Impact with <span className="text-green-400 glow">Digital Excellence</span> 🚀
     </h2>
 
     {/* Description with glowing effect */}
-    <p className="text-lg sm:text-xl text-slate-300 mb-8 animate-fade-in-up">
-      <span className="block font-bold text-lg text-blue-300 tracking-wide mb-3">Where Vision Meets Velocity.</span>
+    <p className="text-base sm:text-lg md:text-xl text-slate-300 mb-6 sm:mb-8 animate-fade-in-up">
+      <span className="block font-bold text-base sm:text-lg text-blue-300 tracking-wide mb-2 sm:mb-3">Where Vision Meets Velocity.</span>
       At <span className="font-semibold text-white glow">Saasnext</span>, we believe every great business starts with a bold idea — and ends with flawless execution.
       <br /><br />
       As a premier <strong className="text-blue-400 glow">Web Application Development Company in Junagadh</strong>, we specialize in crafting scalable SaaS platforms that evolve with your ambitions. From intuitive UI/UX design to full-stack development, our team turns complexity into simplicity.
@@ -58,7 +58,7 @@ export default function Services() {
     {/* Call to Action with hover effects */}
     <a
       href="/contact"
-      className="inline-block relative px-8 py-4 bg-gradient-to-r from-green-500 to-blue-600 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group overflow-hidden"
+      className="inline-block relative px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-green-500 to-blue-600 text-white text-base sm:text-lg font-semibold rounded-full shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group overflow-hidden"
     >
       <span className="relative z-10">🚀 Launch Your Digital Transformation</span>
       <span className="absolute inset-0 bg-white/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>

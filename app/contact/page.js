@@ -5,7 +5,7 @@ import ContactForm from '../components/ContactForm';
 export default function Contact() {
   return (
     <>
-    <section className="relative w-full h-[600px] bg-gradient-to-br from-[#161E42] to-[#0A1128] flex items-center justify-center text-center px-6 overflow-hidden">
+    <section className="relative w-full min-h-[600px] sm:min-h-screen bg-gradient-to-br from-[#161E42] to-[#0A1128] flex items-center justify-center text-center px-4 sm:px-6 py-12 sm:py-16 overflow-hidden">
   {/* Background decorative elements */}
   <div className="absolute inset-0 z-0 overflow-hidden">
     {/* Animated gradient overlay */}
@@ -30,15 +30,15 @@ export default function Contact() {
   </div>
 
   {/* Content container */}
-  <div className="max-w-3xl relative z-10">
+  <div className="max-w-3xl relative z-10 px-4 sm:px-6 mx-auto">
     {/* Heading with gradient shimmer effect */}
-    <h2 className="text-5xl sm:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-shimmer transition-all duration-500 hover:tracking-wide">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-shimmer transition-all duration-500 hover:tracking-wide">
       Welcome to Saasnext
     </h2>
 
     {/* Description with glowing effect */}
-    <p className="text-lg sm:text-xl text-slate-300 leading-relaxed animate-fade-in-up">
-      <span className="block font-bold text-lg text-blue-300 tracking-wide mb-3">Your Digital Growth Engine.</span>
+    <p className="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed animate-fade-in-up">
+      <span className="block font-bold text-base sm:text-lg text-blue-300 tracking-wide mb-2 sm:mb-3">Your Digital Growth Engine.</span>
       We don’t just build apps — we fuel ambition. At <span className="font-semibold text-white glow">Saasnext</span>, we’re on a mission to turn bold ideas into powerful digital realities.
       <br /><br />
       As a trusted <strong className="text-orange-400 glow">Web Development Company in Junagadh</strong>, we specialize in crafting high-performance web applications and scalable <strong className="text-purple-400 glow">Custom SaaS Development Services</strong> that grow with your business.

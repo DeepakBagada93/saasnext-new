@@ -29,7 +29,7 @@ export default function AboutUs() {
     <>
 
 
-<section className="relative w-full bg-gradient-to-br from-[#161E42] to-[#0A1128] text-white overflow-hidden h-screen flex items-center justify-center px-6">
+<section className="relative w-full bg-gradient-to-br from-[#161E42] to-[#0A1128] text-white overflow-hidden min-h-screen flex items-center justify-center px-4 sm:px-6 py-12 sm:py-16 mt-[30px] md:mt-0">
   {/* Background decorative elements */}
   <div className="absolute inset-0 z-0 overflow-hidden">
     {/* Animated gradient overlay */}
@@ -54,15 +54,15 @@ export default function AboutUs() {
   </div>
 
   {/* Content container */}
-  <div className="container mx-auto text-center max-w-4xl relative z-10">
+  <div className="container mx-auto text-center max-w-4xl relative z-10 px-4 sm:px-6">
     {/* Heading with gradient and animation */}
-    <h1 className="text-6xl md:text-7xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 animate-shimmer">
+    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 animate-shimmer">
       About Saasnext
     </h1>
 
     {/* Description with glowing effect */}
-    <p className="text-lg md:text-xl leading-relaxed text-gray-300 animate-fade-in-up">
-      <span className="block font-bold text-xl text-blue-300 tracking-wide mb-4">Where Code Meets Vision.</span>
+    <p className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-300 animate-fade-in-up">
+      <span className="block font-bold text-lg sm:text-xl text-blue-300 tracking-wide mb-3 sm:mb-4">Where Code Meets Vision.</span>
       We don't just build apps — we bring ideas to life. At <strong className="text-yellow-400 glow">Saasnext</strong>, innovation is our language, and technology is our canvas.
       <br /><br />
       As a leading{" "}
@@ -77,10 +77,10 @@ export default function AboutUs() {
     </p>
 
     {/* Call to Action with 3D hover effect */}
-    <div className="mt-10 animate-fade-in-up">
+    <div className="mt-6 sm:mt-8 md:mt-10 animate-fade-in-up">
       <a
         href="/contact"
-        className="inline-block relative bg-gradient-to-r from-orange-500 to-pink-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 hover:scale-105 overflow-hidden group"
+        className="inline-block relative bg-gradient-to-r from-orange-500 to-pink-600 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 hover:scale-105 overflow-hidden group text-sm sm:text-base"
       >
         <span className="relative z-10">Start Your Journey Today →</span>
         <span className="absolute inset-0 bg-white/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
