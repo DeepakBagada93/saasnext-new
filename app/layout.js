@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 export const metadata = {
-  title: "SaasNext - Web Application Development Company in Junagadh | AI Solutions",
+  title: "SaasNext - WebApp Development Company in Junagadh | AI agent solutions, and lead generation tools",
   description: "Leading web application development company in Junagadh offering custom web apps, AI solutions, and lead generation services. Expert SaaS development & digital marketing solutions for business growth.",
   icons: {
     icon: {
